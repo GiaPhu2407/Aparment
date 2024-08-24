@@ -8,7 +8,7 @@ const ContentNewandEvent = () => {
   }, []);
   return (
     <div className="bg-white dark:bg-gray-400 ">
-      <div className="text-center mt-10 text-3x uppercase">
+      <div className="text-center mt-10 text-3xl uppercase">
         <p>Tin Tức và sự kiện</p>
       </div>
       <div className="flex flex-col items-center pl-2 mt-14">
