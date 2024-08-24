@@ -2,14 +2,14 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-const NewandEvent = () => {
+const NewAndEvent = () => {
   useEffect(() => {
     AOS.init({ duration: 2500 });
   }, []);
   return (
-    <div className=" bg-white dark:bg-gray-400 -mt-[50px]">
-      <div className="text-center mt-10 text-3xl uppercase font-serif">
-        <p>Tin Tức và sự kiện </p>
+    <div className="bg-white dark:bg-gray-400 ">
+      <div className="text-center mt-10 text-3x uppercase">
+        <p>Tin Tức và sự kiện</p>
       </div>
       <div className="flex flex-col items-center pl-2 mt-14">
         <div className="flex justify-center space-x-5">
@@ -134,4 +134,4 @@ const NewandEvent = () => {
   );
 };
 
-export default NewandEvent;
+export default NewAndEvent;
