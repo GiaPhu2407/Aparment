@@ -1,13 +1,13 @@
 import React from "react";
 import Contentintroduce from "./Contentintroduce";
 import ContentBlog from "./ContentBlog";
-import NewAndEvent from "./NewAndEvent";
+import ContentNewandEvent from "./ContentNewandEvent";
 const Content = () => {
   return (
     <div>
       <Contentintroduce />
       <ContentBlog />
-      <NewAndEvent />
+      <ContentNewandEvent />
     </div>
   );
 };

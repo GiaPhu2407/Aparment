@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-const NewAndEvent = () => {
+const ContentNewandEvent = () => {
   useEffect(() => {
     AOS.init({ duration: 2500 });
   }, []);
@@ -134,4 +134,4 @@ const NewAndEvent = () => {
   );
 };
 
-export default NewAndEvent;
+export default ContentNewandEvent;
