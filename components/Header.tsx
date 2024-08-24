@@ -48,13 +48,23 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <div className="rounded-[8px] border-2 border-[var(--blue-900,#0F172A)] p-[11px_16px] cursor-pointer">
+        {/* <div className="rounded-[8px] border-2 border-[var(--blue-900,#0F172A)] p-[11px_16px] cursor-pointer">
           <span className="font-['Inter'] font-semibold text-[16px] text-[var(--blue-900,#0F172A)]">
             Start free trial
           </span>
-        </div>
+        </div> */}
 
-        <ModeToggle />
+        <div className="menu-container flex  h-full">
+          <div className="flex-grow flex items-center justify-end">
+            <button className="btn btn-outline rounded-3xl">Login</button>
+            <button className="btn btn-outline btn-primary ml-5 rounded-3xl">
+              Sign Up
+            </button>
+          </div>
+          <div className="ml-20">
+            <ModeToggle />
+          </div>
+        </div>
       </div>
       <div className="flex flex-row items-center justify-center w-full max-w-[1600px] box-sizing-border">
         <div className="rounded-[8px] flex flex-col items-start box-sizing-border max-w-[650px]">

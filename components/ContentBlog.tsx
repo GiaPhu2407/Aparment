@@ -60,7 +60,7 @@ const ContentBlog = () => {
 
   return (
     <div>
-      <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
+      <section className="py-10 bg-white dark:bg-gray-400 sm:py-16 lg:py-24">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="text-center lg:text-left mb-10">
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
@@ -135,7 +135,7 @@ const ContentBlog = () => {
               <button
                 type="button"
                 onClick={handlePrev}
-                className="bg-white p-2 rounded-full shadow-lg"
+                className="bg-white dark:bg-gray-400 p-2 rounded-full shadow-lg"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +156,7 @@ const ContentBlog = () => {
               <button
                 type="button"
                 onClick={handleNext}
-                className="bg-white p-2 rounded-full shadow-lg"
+                className="bg-white dark:bg-gray-400 p-2 rounded-full shadow-lg"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
