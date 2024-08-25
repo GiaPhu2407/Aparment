@@ -1,12 +1,14 @@
 import React from "react";
 import Header1 from "./Header1";
-import Content from "./Content1";
-Content;
+import Content1 from "./Content1";
+import Footer1 from "./Footer1";
+
 const ServerHotel = () => {
   return (
     <div>
       <Header1 />
-      <Content />
+      <Content1 />
+      <Footer1 />
     </div>
   );
 };
