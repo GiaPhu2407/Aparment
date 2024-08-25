@@ -19,16 +19,16 @@ const Header1 = () => {
         </div>
         <div className="flex flex-row justify-between gap-6 w-[410px]">
           <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
-            Products
+            Home
           </span>
           <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
-            Features
+            Hotel
           </span>
           <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
-            Pricing
+            Tour
           </span>
           <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
-            Support
+            Service
           </span>
           <div className="flex-none font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
             <ul className="menu menu-horizontal -mt-[14px] ">
