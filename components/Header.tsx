@@ -30,10 +30,13 @@ const Header = () => {
           </Link>
 
           <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
-           Tour
+            Tour
           </span>
           <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
-           Service
+            Service
+          </span>
+          <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
+            Meeting&Event
           </span>
           <div className="flex-none font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
             <ul className="menu menu-horizontal -mt-[14px] ">
