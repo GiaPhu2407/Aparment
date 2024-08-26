@@ -35,9 +35,13 @@ const Header = () => {
           <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
             Service
           </span>
-          <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
+          <Link
+            href={"/ShowMeeting"}
+            className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]"
+          >
             Meeting&Event
-          </span>
+          </Link>
+
           <div className="flex-none font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
             <ul className="menu menu-horizontal -mt-[14px] ">
               <li>

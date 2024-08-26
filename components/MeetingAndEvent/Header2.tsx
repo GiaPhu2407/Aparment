@@ -1,5 +1,6 @@
 import React from "react";
 import { ModeToggle } from "@/components/mode-theme";
+import Link from "next/link";
 
 const Header2 = () => {
   return (
@@ -21,18 +22,24 @@ const Header2 = () => {
           <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
             Home
           </span>
-          <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
+          <Link
+            href={"/ShowHotel"}
+            className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]"
+          >
             Hotel
-          </span>
+          </Link>
           <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
             Tour
           </span>
           <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
             Service
           </span>
-          <span className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
+          <Link
+            href={"/ShowMeeting"}
+            className="font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]"
+          >
             Meeting&Event
-          </span>
+          </Link>
           <div className="flex-none font-['Inter'] font-semibold text-[16px] text-[var(--gray-900,#18181B)]">
             <ul className="menu menu-horizontal -mt-[14px] ">
               <li>
