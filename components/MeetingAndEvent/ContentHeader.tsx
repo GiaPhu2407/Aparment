@@ -4,7 +4,7 @@ const ContentHeader = () => {
   return (
     <div className="text-center">
       <p className="text-[40px] leading-1 uppercase font-sans">Mỗi sự kiện đều đáng nhớ</p>
-      <p className="text-xl mt-2 ">
+      <p className="text-xl mt-2 w-[70%] mx-auto ">
         Bất kể dịp nào hay quy mô nào, từ 5 đến 500 người, việc kinh doanh của
         bạn có nghĩa là chúng tôi ở đây để chăm sóc các chi tiết để bạn có thể
         tập trung vào mục tiêu của nhóm mình. Với các thương hiệu như

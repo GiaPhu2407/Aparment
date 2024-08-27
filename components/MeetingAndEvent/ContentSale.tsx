@@ -14,7 +14,7 @@ const ContentSale = () => {
             className="w-[500px]"
           />
           <a href="" className="text-orange-500 mt-4 font-extrabold">
-            LEARN MORE
+            LEARN MORE {">"}
           </a>
         </div>
         <div className="flex flex-col items-center mx-5">
@@ -24,9 +24,20 @@ const ContentSale = () => {
             className="w-[500px]"
           />
           <a href="" className="text-orange-500 font-extrabold mt-4">
-            LEARN MORE
+            LEARN MORE {">"}
           </a>
         </div>
+      </div>
+      <div className="flex flex-col items-center justify-center text-center mt-10">
+        <img
+          src="https://digital.ihg.com/is/image/ihg/ihg-mhym-lp-offer-mod-gben-lvp-1170x500"
+          alt=""
+          className="w-[700px] flex items-center justify-center"
+        />
+        <p>Offer available in select regions</p>
+        <a href="" className="text-orange-500 mt-4 font-extrabold text-start">
+          LEARN MORE {">"}
+        </a>
       </div>
     </div>
   );
