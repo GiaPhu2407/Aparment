@@ -6,34 +6,6 @@ import ButtonPrimaryWithSmallIcon from "../component/button-primary-with-small-i
 import Transaction from "../component/transaction";
 
 const DashboardPreview: FunctionComponent = () => {
-  const data = {
-    labels: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
-    ],
-    datasets: [
-      {
-        label: "Sales",
-        data: [
-          32000, 45000, 50000, 48000, 60000, 45591, 52000, 61000, 55000, 64000,
-          70000, 75000,
-        ],
-        fill: false,
-        backgroundColor: "rgb(75, 192, 192)",
-        borderColor: "rgba(75, 192, 192, 0.2)",
-      },
-    ],
-  };
   return (
     <div className="w-full relative bg-base-black overflow-hidden flex flex-row items-start justify-start leading-[normal] tracking-[normal]">
       <main className="flex-1 bg-color flex flex-col items-start justify-start pt-0 px-0 pb-[43px] box-border max-w-full mq450:pb-5 mq450:box-border mq975:pb-7 mq975:box-border">
@@ -346,7 +318,7 @@ const DashboardPreview: FunctionComponent = () => {
                         </button>
                       </div>
                     </div>
-                    <div className="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full text-center text-xs text-gray-500">
+                    {/* <div className="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full text-center text-xs text-gray-500">
                       <div className="self-stretch flex flex-col items-start justify-start pt-[30px] px-0 pb-0 box-border relative gap-[39px] max-w-full mq975:gap-[19px]">
                         <div className="self-stretch flex flex-col items-start justify-start gap-3 max-w-full">
                           <div className="self-stretch flex flex-col items-start justify-start gap-1 max-w-full">
@@ -428,7 +400,7 @@ const DashboardPreview: FunctionComponent = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="w-96 rounded-3xs bg-color-3 border-gray-200 border-[1px] border-solid box-border flex flex-col items-start justify-start pt-[18px] pb-[35px] pl-[27px] pr-[21px] gap-6 min-w-[384px] max-w-full z-[1] text-smi mq450:min-w-full mq1000:flex-1">
                     <div className="w-96 h-[329px] relative rounded-3xs bg-color-3 border-gray-200 border-[1px] border-solid box-border hidden max-w-full" />
