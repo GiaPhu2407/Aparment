@@ -1,3 +1,4 @@
+import { USER_NOT_EXIST } from "@/app/llb/constant";
 import UserSchema from "@/app/llb/zod-schema/route";
 import prisma from "@/prisma/client";
 import { error } from "console";
@@ -46,6 +47,45 @@ export async function PUT(
     });
     return NextResponse.json(
       { message: `Update id ${params.Id} thành công` },
+      { status: 200 }
+    );
+  }
+}
+
+// export async function DELETE(
+//   request: NextRequest,
+//   { params }: { params: { Id: string } }
+// ) {
+//   const userId = Number(params.Id);
+//   try {
+//     const deleteUser = await prisma.user.delete({
+//       where: { id: userId },
+//     });
+//     return NextResponse.json({ deleteUser }, { status: 200 });
+//   } catch (error: any) {
+//     return NextResponse.json(
+//       { error_code: USER_NOT_EXIST.error_code, cause: USER_NOT_EXIST.message },
+//       { status: 200 }
+//     );
+//   }
+// }
+
+export async function DELETE(
+  request: NextRequest,
+  { params }: { params: { Id: string } }
+) {
+  const userId = Number(params.Id);
+  try {
+    const deleteUser = await prisma.user.delete({
+      where: { id: userId },
+    });
+    return NextResponse.json({ deleteUser }, { status: 200 });
+  } catch (error: any) {
+    return NextResponse.json(
+      {
+        error_code: USER_NOT_EXIST.error_code,
+        cause: USER_NOT_EXIST.error_code,
+      },
       { status: 200 }
     );
   }
