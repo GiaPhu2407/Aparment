@@ -22,7 +22,7 @@ export async function POST(
 ) {
   const body = await request.json();
 
-  const Userschema = z.object({
+  const UserSchema = z.object({
     email: z.string().email({ message: "Email không tông tại" }),
     name: z
       .string()
@@ -30,7 +30,7 @@ export async function POST(
       .max(255, { message: "Tên không được dài quá 255 ký tự" }),
   });
 
-  const Check = Userschema.safeParse({
+  const Check = UserSchema.safeParse({
     email: body.email,
     name: body.name,
   });
