@@ -1,4 +1,4 @@
-import UserSchema from "@/app/llb/zod-schema/route";
+import { request } from "http";
 import prisma from "@/prisma/client";
 import { error } from "console";
 import { NextRequest, NextResponse } from "next/server";
@@ -65,6 +65,13 @@ export async function POST(
   request: NextRequest,
   { params }: { params: { Id: string } }
 ) {
+  const UserSchema = z.object({
+    email: z.string().email({ message: "Email không hợp lệ" }),
+    name: z
+      .string()
+      .min(8, { message: "Tên phải dài hơn 8 ký tự" })
+      .max(255, { message: "Tên không được quá 255 ký tự" }),
+  });
   const body = await request.json();
   const Check = UserSchema.safeParse({
     email: body.email,
