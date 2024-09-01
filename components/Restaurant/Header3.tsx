@@ -379,6 +379,14 @@ const Header3 = () => {
                     Meeting&Event
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href={"/ShowMeeting"}
+                    className="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >
+                    Restaurant
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
