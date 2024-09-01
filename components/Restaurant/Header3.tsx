@@ -91,7 +91,7 @@ const Header3 = () => {
                 <li>
                   <Link
                     href={"/Show"}
-                    className="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-300 md:p-0 dark:text-pink-300 md:dark:hover:text-pink-300 dark:hover:bg-gray-700 dark:hover:text-pink-300 md:dark:hover:bg-transparent dark:border-gray-700"
                     aria-current="page"
                   >
                     Home
@@ -100,7 +100,7 @@ const Header3 = () => {
                 <li>
                   <Link
                     href={"/ShowHotel"}
-                    className="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-300 md:p-0 dark:text-pink-300 md:dark:hover:text-pink-300 dark:hover:bg-gray-700 dark:hover:text-pink-300 md:dark:hover:bg-transparent dark:border-gray-700"
                     aria-current="page"
                   >
                     Hotel
@@ -111,7 +111,7 @@ const Header3 = () => {
                     id="mega-menu-icons-dropdown-button"
                     data-dropdown-toggle="mega-menu-icons-dropdown"
                     onClick={toggleDropdown}
-                    className="flex items-center justify-between w-full py-2 px-3 font-medium text-black border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    className="flex items-center justify-between w-full py-2 px-3 font-medium text-black border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-300 md:p-0 dark:text-pink-300 md:dark:hover:text-pink-300 dark:hover:bg-gray-700 dark:hover:text-pink-300 md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Company
                     <svg
@@ -358,7 +358,7 @@ const Header3 = () => {
                 <li>
                   <a
                     href="#"
-                    className="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-300 md:p-0 dark:text-pink-300 md:dark:hover:text-pink-300 dark:hover:bg-gray-700 dark:hover:text-pink-300 md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Team
                   </a>
@@ -366,7 +366,7 @@ const Header3 = () => {
                 <li>
                   <a
                     href="#"
-                    className="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-300 md:p-0 dark:text-pink-300 md:dark:hover:text-pink-300 dark:hover:bg-gray-700 dark:hover:text-pink-300 md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Services
                   </a>
@@ -374,7 +374,7 @@ const Header3 = () => {
                 <li>
                   <Link
                     href={"/ShowMeeting"}
-                    className="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-300 md:p-0 dark:text-pink-300 md:dark:hover:text-pink-300 dark:hover:bg-gray-700 dark:hover:text-pink-300 md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Meeting&Event
                   </Link>
@@ -382,7 +382,7 @@ const Header3 = () => {
                 <li>
                   <Link
                     href={"/ShowMeeting"}
-                    className="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block py-2 px-3 text-black border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-pink-300 md:p-0 dark:text-pink-300 md:dark:hover:text-pink-300 dark:hover:bg-gray-700 dark:hover:text-pink-300 md:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Restaurant
                   </Link>
