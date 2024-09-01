@@ -1,10 +1,11 @@
-// import { z } from "zod";
 import { z } from "zod";
+
 const UserSchema = z.object({
-  email: z.string().email({ message: "Email không hợp lệ" }),
+  email: z.string().email({ message: "Email khong hop le" }),
   name: z
     .string()
-    .min(8, { message: "Ten phải dài hơn 8 ký tự" })
-    .max(255, { message: "Tên không được dài hơn 255 ký tự" }),
+    .min(8, { message: "Tên cần dài hơn hoặc bằng 8 kí tự" })
+    .max(255, { message: "Tên có độ dài tối đa là 255 kí tự" }),
 });
+
 export default UserSchema;
