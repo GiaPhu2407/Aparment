@@ -32,7 +32,7 @@ const ContentFood = () => {
           className="w-[60%]"
         />
       </div>
-      <div className="text-center mx-auto w-[70%] mt-5 ">
+      <div className="text-center mx-auto w-[70%] mt-8 ">
         <p className="font-serif">
           Ta có thể thưởng thức những kiệt tác ẩm thực ngay tại biệt thự tráng
           lệ và riêng tư, hoặc tản bộ với người của mình dưới ánh trăng, đến cụm
@@ -40,7 +40,7 @@ const ContentFood = () => {
           không ngủ trong miên man của sóng biển sáng bạc.
         </p>
       </div>
-      <div className="mx-auto w-[90%]">
+      <div className="mx-auto w-[90%] mt-10">
         <img
           src="https://www.mo-residencesdanang.com/image/restaurant3.jpg"
           alt=""
