@@ -10,7 +10,7 @@ const Header3 = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
   return (
-    <div className="bg-white dark:bg-gray-400 flex flex-col items-center w-full box-sizing-border">
+    <div className="bg-white dark:bg-gray-400 flex flex-col items-center w-full box-sizing-border f">
       <div className="w-full">
         <img
           src="https://www.mo-residencesdanang.com/image/restaurant_banner.jpg"
@@ -22,17 +22,17 @@ const Header3 = () => {
       <div className="m-[0_0_98px_0] flex flex-row justify-between items-center gap-20 w-[1286px] max-w-full box-sizing-border">
         <div className="flex flex-row items-center gap-2">
           {/* <img className="w-[37px] h-[36.8px]" alt="" />
-          <img className="w-[14.9px] h-[16.6px]" alt="" />
-          <div className="bg-[var(--gray-900,#18181B)] w-[2.8px] h-[16.3px]"></div>
-          <img className="w-[10.4px] h-[12.3px]" alt="" />
-          <img className="w-[6.5px] h-[11.9px]" alt="" />
-          <img className="w-[2.8px] h-[16.1px]" alt="" />
-          <img className="w-[7.6px] h-[14.5px]" alt="" />
-          <img className="w-[12.2px] h-[16.5px]" alt="" />
-          <img className="w-[12.8px] h-[16.3px]" alt="" /> */}
+            <img className="w-[14.9px] h-[16.6px]" alt="" />
+            <div className="bg-[var(--gray-900,#18181B)] w-[2.8px] h-[16.3px]"></div>
+            <img className="w-[10.4px] h-[12.3px]" alt="" />
+            <img className="w-[6.5px] h-[11.9px]" alt="" />
+            <img className="w-[2.8px] h-[16.1px]" alt="" />
+            <img className="w-[7.6px] h-[14.5px]" alt="" />
+            <img className="w-[12.2px] h-[16.5px]" alt="" />
+            <img className="w-[12.8px] h-[16.3px]" alt="" /> */}
           {/* <div className="bg-[var(--gray-900,#18181B)] w-[2.9px] h-[16.1px]"></div> */}
         </div>
-        <nav className=" border-gray-200 dark:bg-gray-900 absolute top-0 left-0 w-full text-center">
+        <nav className=" bg-white border-gray-200 dark:bg-gray-900  top-0 left-0 w-full text-center fixed ">
           <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
             <a
               href="https://flowbite.com"
@@ -85,7 +85,7 @@ const Header3 = () => {
             </div>
             <div
               id="mega-menu-icons"
-              className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+              className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 "
             >
               <ul className="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
                 <li>
@@ -384,16 +384,16 @@ const Header3 = () => {
           </div>
         </nav>
         {/* <div className="rounded-[8px] border-2 border-[var(--blue-900,#0F172A)] p-[11px_16px] cursor-pointer">
-          <span className="font-['Inter'] font-semibold text-[16px] text-[var(--blue-900,#0F172A)]">
-            Start free trial
-          </span>
-        </div> */}
+            <span className="font-['Inter'] font-semibold text-[16px] text-[var(--blue-900,#0F172A)]">
+              Start free trial
+            </span>
+          </div> */}
 
         {/* <div className="menu-container flex  h-full">
-          <div className="ml-20">
-            <ModeToggle />
-          </div>
-        </div> */}
+            <div className="ml-20">
+              <ModeToggle />
+            </div>
+          </div> */}
       </div>
       {/* Carousel */}
     </div>
