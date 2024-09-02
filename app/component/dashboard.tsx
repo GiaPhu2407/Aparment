@@ -11,6 +11,12 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { GrUserManager } from "react-icons/gr";
+import { MdCleaningServices } from "react-icons/md";
+import { TbBrandBooking } from "react-icons/tb";
+import { MdOutlineBedroomParent } from "react-icons/md";
+import { IoIosInformationCircleOutline } from "react-icons/io";
+import { FaChartLine } from "react-icons/fa";
 
 export function SidebarDemo() {
   const links = [
@@ -22,24 +28,45 @@ export function SidebarDemo() {
       ),
     },
     {
-      label: "Profile",
+      label: "Quản lý nhân viên",
       href: "#",
       icon: (
-        <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <GrUserManager className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
-      label: "Settings",
+      label: "Quản lý dịch vụ",
       href: "#",
       icon: (
-        <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <MdCleaningServices className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
-      label: "Logout",
+      label: "Quản lý đặt phòng",
       href: "#",
       icon: (
-        <IconArrowLeft className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <TbBrandBooking className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
+      label: "Quản lý phòng",
+      href: "#",
+      icon: (
+        <MdOutlineBedroomParent className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
+      label: "Quản lý thông tin khách hàng",
+      href: "#",
+      icon: (
+        <IoIosInformationCircleOutline className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+      ),
+    },
+    {
+      label: "Thống Kê",
+      href: "#",
+      icon: (
+        <FaChartLine className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
   ];
@@ -48,7 +75,7 @@ export function SidebarDemo() {
     <div
       className={cn(
         "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-full flex-1 max-w-full mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden",
-        "h-[60vh]" // for your use case, use `h-screen` instead of `h-[60vh]`
+        "h-full" // for your use case, use `h-screen` instead of `h-[60vh]`
       )}
     >
       <Sidebar open={open} setOpen={setOpen}>
@@ -64,11 +91,11 @@ export function SidebarDemo() {
           <div>
             <SidebarLink
               link={{
-                label: "Manu Arora",
+                label: "Gia Phu",
                 href: "#",
                 icon: (
                   <img
-                    src="https://assets.aceternity.com/manu.png"
+                    src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/428603879_3699291333727981_8450238390845543097_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF8eAl4DqSiHc45WD_3ZUa0Yj2_k1pIrCxiPb-TWkisLKdt4xrCZnSawKeji-j5xGqR90NFt9JrVnVNHzicN-9h&_nc_ohc=bOEh471GIxUQ7kNvgHsX5jW&_nc_ht=scontent.fdad2-1.fna&oh=00_AYDcWgJsXxzR4n9Z_AzzVIwJKxH7nhOj5EkpjS99C-PUzg&oe=66DB9B05"
                     className="h-7 w-7 flex-shrink-0 rounded-full"
                     width={50}
                     height={50}
