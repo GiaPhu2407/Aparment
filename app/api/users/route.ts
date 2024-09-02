@@ -1,4 +1,4 @@
-import UserSchema from "@/app/llb/zod-schema/route";
+import UserSchema from "@/app/llb/zod_schema/route";
 import prisma from "@/prisma/client";
 import { request } from "http";
 import { NextRequest, NextResponse } from "next/server";
@@ -78,7 +78,7 @@ export async function POST(
 ) {
   const body = await request.json();
 
-  const Userschema = z.object({
+  const UserSchema = z.object({
     email: z.string().email({ message: "Email khong hop le" }),
     name: z
       .string()

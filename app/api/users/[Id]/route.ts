@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import prisma from "@/prisma/client";
-import UserSchema from "@/app/llb/zod-schema/route";
-import { USER_NOT_EXIST } from "@/app/llb/constant";
+import UserSchema from "@/app/llb/zod_schema/route";
+import { USER_NOT_EXIST } from "@/app/llb/constants";
 
 // 1. getUserById - dựa trên id trả về thông tin của user
 
