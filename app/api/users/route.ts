@@ -1,84 +1,36 @@
-import { request } from "http";
 import prisma from "@/prisma/client";
-import { error } from "console";
+import { request } from "http";
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 
-export async function GET(request: NextRequest) {
+// 1. Lấy tất cả các users
+export async function GET() {
   const user = await prisma.user.findMany();
-  return NextResponse.json({ user, message: "Oke" }, { status: 200 });
-}
 
-export async function DELETE(request: NextRequest) {
-  const user = await prisma.user.deleteMany();
   return NextResponse.json(
-    { message: "User deleted successfully" },
-    { status: 200 }
+    { user, message: `OK` },
+    { status: 200, statusText: "Gia Phu oKE" }
   );
 }
 
-// export async function POST(
-//   request: NextRequest,
-//   { params }: { params: { Id: string } }
-// ) {
-//   const body = await request.json();
+export async function POST(request: NextRequest) {
+  const body = await request.json();
 
-//   const UserSchema = z.object({
-//     email: z.string().email({ message: "Email không tông tại" }),
-//     name: z
-//       .string()
-//       .min(8, { message: "Tên phải dài hơn 8 ký tự" })
-//       .max(255, { message: "Tên không được dài quá 255 ký tự" }),
-//   });
-
-//   const Check = UserSchema.safeParse({
-//     email: body.email,
-//     name: body.name,
-//   });
-//   if (!Check.success) {
-//     return NextResponse.json(Check.error.errors, { status: 200 });
-//   } else {
-//     const ue = await prisma.user.findUnique({
-//       where: { email: body.email },
-//     });
-//     if (ue == null) {
-//       const user = await prisma.user.create({
-//         data: {
-//           email: body.email,
-//           name: body.name,
-//         },
-//       });
-//       return NextResponse.json(
-//         { user, message: "Thêm thành công" },
-//         { status: 201 }
-//       );
-//     } else {
-//       return NextResponse.json(
-//         { message: "Email đã tồn tại" },
-//         { status: 400 }
-//       );
-//     }
-//   }
-// }
-
-export async function POST(
-  request: NextRequest,
-  { params }: { params: { Id: string } }
-) {
   const UserSchema = z.object({
-    email: z.string().email({ message: "Email không hợp lệ" }),
+    email: z.string().email({ message: "Email khong hop le" }),
     name: z
       .string()
-      .min(8, { message: "Tên phải dài hơn 8 ký tự" })
-      .max(255, { message: "Tên không được quá 255 ký tự" }),
+      .min(8, { message: "Tên cần dài hơn hoặc bằng 8 kí tự" })
+      .max(255, { message: "Tên có độ dài tối đa là 255 kí tự" }),
   });
-  const body = await request.json();
-  const Check = UserSchema.safeParse({
+
+  const userValidateCheck = UserSchema.safeParse({
     email: body.email,
     name: body.name,
   });
-  if (!Check.success) {
-    return NextResponse.json(Check.error.errors, { status: 200 });
+
+  if (!userValidateCheck.success) {
+    return NextResponse.json(userValidateCheck.error.errors, { status: 200 });
   } else {
     const ue = await prisma.user.findUnique({
       where: { email: body.email },
@@ -90,15 +42,42 @@ export async function POST(
           name: body.name,
         },
       });
+
       return NextResponse.json(
-        { user, message: "Thêm thành công" },
+        { user, message: `Thêm mới thành công` },
         { status: 201 }
       );
     } else {
       return NextResponse.json(
         { message: "Email đã tồn tại" },
-        { status: 400 }
+        { status: 200 }
       );
     }
+    //   // c. Tiến hành thêm mới dữ liệu vào DB sử dụng prisma client
+    //   const user = await prisma.user.create({
+    //     data: {
+    //       email: body.email,
+    //       name: body.name,
+    //     },
+    //   });
+    //   //d. Trả về kết quả là dữ liệu vừa được tạo cùng với status:201
+    //   return NextResponse.json(
+    //     { user, message: `Thêm mới thành công` },
+    //     { status: 201 }
+    //   );
+    // }
   }
 }
+
+
+
+//3.Xoá tất cả các users
+export async function DELETE(request: NextRequest) {
+  const user = await prisma.user.deleteMany();
+  return NextResponse.json(
+    { user, message: `Xoá tất cả user` },
+    { status: 200 }
+  );
+}
+
+//zod để kiểm tra tính hợp lệ của dữ liệu
