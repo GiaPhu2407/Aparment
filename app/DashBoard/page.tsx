@@ -1,13 +1,12 @@
-import React from 'react'
-import DashboardPreview from '../component/dashboard'
+import React from "react";
+import SidebarDemo from "../component/dashboard";
+
 const page = () => {
   return (
     <div>
-       
-        <DashboardPreview />  
-    
+      <SidebarDemo />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
