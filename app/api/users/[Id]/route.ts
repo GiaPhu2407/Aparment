@@ -6,7 +6,7 @@ import prisma from "@/prisma/client";
 import { error } from "console";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function generateStaticParams() {}
+// export async function generateStaticParams(){}
 
 export async function GET(
   request: NextRequest,
