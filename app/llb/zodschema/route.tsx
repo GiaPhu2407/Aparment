@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-const UserSchema = z.object({
+const Schema = z.object({
   email: z.string().email({ message: "Email khong hop le" }),
   name: z
     .string()
@@ -8,4 +8,4 @@ const UserSchema = z.object({
     .max(255, { message: "Ten khog duoc dai qua 255 ky tu" }),
 });
 
-export default UserSchema;
+export default Schema;
