@@ -1,4 +1,4 @@
-import Schema from "@/app/llb/zodschema/route";
+import Schema from "@/lib/zod-schema/route";
 
 import prisma from "@/prisma/client";
 import { error } from "console";
