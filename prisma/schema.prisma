@@ -37,9 +37,3 @@ model User {
   posts   Post[]
   profile Profile?
 }
-model Hotel {
-  id          Int      @id @default(autoincrement())
-  title       String   @db.VarChar(255)
-  description String?
-  imageUrl    String?
-}
