@@ -18,7 +18,7 @@ import { MdOutlineBedroomParent } from "react-icons/md";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaChartLine } from "react-icons/fa";
 
-export function SidebarDemo() {
+export function RoomManager() {
   const links = [
     {
       label: "Dashboard",
@@ -164,4 +164,4 @@ const Dashboard = () => {
     </div>
   );
 };
-export default SidebarDemo;
+export default RoomManager;
