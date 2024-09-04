@@ -1,12 +1,40 @@
 "use client";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-export default function Home() {
+interface IUser {
+  id: number;
+  name: string;
+  email: string;
+}
+
+const page = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const [users, setUsers] = useState<IUser[]>([]);
 
-  const handleSubmit = async (e: any) => {
+  const getData = async () => {
+    const res = await fetch("http://localhost:3000/api/users");
+    if (!res.ok) {
+      throw new Error("Failed to fetch data");
+    }
+    return res.json();
+  };
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const data = await getData();
+        setUsers(data.user);
+      } catch (error) {
+        console.error("Error fetching users:", error);
+      }
+    };
+
+    fetchUsers();
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const response = await fetch("/api/users", {
@@ -18,6 +46,7 @@ export default function Home() {
     const result = await response.json();
     setMessage(result.message || result.error || "Có lỗi xảy ra");
   };
+
   return (
     <div>
       <h1>Thêm người dùng mới</h1>
@@ -47,6 +76,17 @@ export default function Home() {
         <button type="submit">Thêm mới</button>
       </form>
       {message && <p>{message}</p>}
+      <div>
+        <ul>
+          {users.map((user) => (
+            <li key={user.id}>
+              {user.id} - {user.name} - {user.email}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
-}
+};
+
+export default page;

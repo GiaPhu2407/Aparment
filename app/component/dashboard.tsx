@@ -17,6 +17,7 @@ import { TbBrandBooking } from "react-icons/tb";
 import { MdOutlineBedroomParent } from "react-icons/md";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaChartLine } from "react-icons/fa";
+import { FileSymlink } from "lucide-react";
 
 export function SidebarDemo() {
   const links = [
@@ -29,14 +30,15 @@ export function SidebarDemo() {
     },
     {
       label: "Quản lý nhân viên",
-      href: "#",
+      href: "/PersonelManager",
       icon: (
         <GrUserManager className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
+      
     },
     {
       label: "Quản lý dịch vụ",
-      href: "#",
+      href: "/ClientManager",
       icon: (
         <MdCleaningServices className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),

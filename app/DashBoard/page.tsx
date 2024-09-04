@@ -1,10 +1,9 @@
+import Server from "@/app/component/Server";
 import React from "react";
-import SidebarDemo from "../component/dashboard";
-
 const page = () => {
   return (
     <div>
-      <SidebarDemo />
+      <Server />
     </div>
   );
 };
