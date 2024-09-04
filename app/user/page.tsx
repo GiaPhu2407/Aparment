@@ -8,9 +8,9 @@ interface IUser {
 }
 
 const page = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
   const [users, setUsers] = useState<IUser[]>([]);
 
   const getData = async () => {
