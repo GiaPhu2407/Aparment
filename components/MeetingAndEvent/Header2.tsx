@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { ModeToggle } from "@/components/mode-theme";
 import Link from "next/link";
-
+import Image from "next/image";
 const Header2 = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -30,7 +30,7 @@ const Header2 = () => {
               href="https://flowbite.com"
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
-              <img
+              <Image
                 src="https://logo-suggestion.renderforest.com/suggestions-images/0008/a533/0008a533e7d0fdc0dd2cb35fb5194474.png"
                 className="h-20"
                 alt="Flowbite Logo"
@@ -398,27 +398,31 @@ const Header2 = () => {
       {/* Carousel */}
       <div className="carousel w-[1500px] h-[400px]">
         <div id="item1" className="carousel-item w-full">
-          <img
+          <Image
             src="https://digital.ihg.com/is/image/ihg/ihg-meetings-events-lp-hero-carousel-3-usen-lvp-v1-1440x617"
             className="w-full"
+            alt={""}
           />
         </div>
         <div id="item2" className="carousel-item w-full">
-          <img
+          <Image
             src="https://digital.ihg.com/is/image/ihg/ihg-meetings-events-lp-hero-carousel-4-usen-lvp-1440x617"
             className="w-full"
+            alt={""}
           />
         </div>
         <div id="item3" className="carousel-item w-full">
-          <img
+          <Image
             src="https://digital.ihg.com/is/image/ihg/ihg-meetings-events-lp-hero-carousel-1-usen-lvp-1440x617"
             className="w-full"
+            alt={""}
           />
         </div>
         <div id="item4" className="carousel-item w-full">
-          <img
+          <Image
             src="https://digital.ihg.com/is/image/ihg/ihg-meetings-events-lp-hero-carousel-2-usen-lvp-1440x617"
             className="w-full"
+            alt={""}
           />
         </div>
       </div>

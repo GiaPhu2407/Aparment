@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const ContentSale = () => {
   return (
     <div>
@@ -8,7 +8,7 @@ const ContentSale = () => {
       </p>
       <div className="flex justify-center items-center mt-10">
         <div className="flex flex-col items-center mx-5">
-          <img
+          <Image
             src="https://digital.ihg.com/is/image/ihg/ihgor-biz-rewards-h1-24-homepg-hero-usen-lvp-1440x617?wid=1320&hei=744&fit=crop,1&resMode=sharp2&op_usm=0.9,1.0,8,0"
             alt=""
             className="w-[500px]"
@@ -18,7 +18,7 @@ const ContentSale = () => {
           </a>
         </div>
         <div className="flex flex-col items-center mx-5">
-          <img
+          <Image
             src="https://digital.ihg.com/is/image/ihg/Kimpton_NOA_1320x744_V4"
             alt=""
             className="w-[500px]"
@@ -29,7 +29,7 @@ const ContentSale = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center text-center mt-10">
-        <img
+        <Image
           src="https://digital.ihg.com/is/image/ihg/ihg-mhym-lp-offer-mod-gben-lvp-1170x500"
           alt=""
           className="w-[700px] flex items-center justify-center"

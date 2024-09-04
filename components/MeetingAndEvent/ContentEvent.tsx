@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const ContentEvent = () => {
   return (
     <div>
@@ -13,22 +13,22 @@ const ContentEvent = () => {
       </div>
 
       <div className="flex flex-wrap justify-center items-center gap-10 mt-28">
-        <img
+        <Image
           src="https://digital.ihg.com/is/image/ihg/ihg-meetings-events-lp-offer-4column-tile-1-usen-svp-1280x1081"
           alt=""
           className="w-[250px]"
         />
-        <img
+        <Image
           src="https://digital.ihg.com/is/image/ihg/ihg-meetings-events-lp-offer-4column-tile-2-usen-svp-1280x1081"
           alt=""
           className="w-[250px]"
         />
-        <img
+        <Image
           src="https://digital.ihg.com/is/image/ihg/ihg-meetings-events-lp-offer-4column-tile-3-usen-svp-1280x1081"
           alt=""
           className="w-[250px]"
         />
-        <img
+        <Image
           src="https://digital.ihg.com/is/image/ihg/ihg-meetings-events-lp-offer-4column-tile-4-usen-svp-1280x1081"
           alt=""
           className="w-[250px]"

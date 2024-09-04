@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const ContentFood = () => {
   return (
     <div>
@@ -14,19 +14,19 @@ const ContentFood = () => {
           </p>
         </div>
         <div>
-          <img
+          <Image
             src="https://www.mo-residencesdanang.com/image/restaurant2.jpg"
             alt=""
           />
         </div>
       </div>
       <div className="flex justify-center items-center mt-10 gap-5">
-        <img
+        <Image
           src="https://www.mo-residencesdanang.com/image/restaurant6.jpg"
           alt=""
           className="w-[40%] mb-[170px] "
         />
-        <img
+        <Image
           src="https://www.mo-residencesdanang.com/image/restaurant7.jpg"
           alt=""
           className="w-[60%]"
@@ -41,7 +41,7 @@ const ContentFood = () => {
         </p>
       </div>
       <div className="mx-auto w-[90%] mt-10">
-        <img
+        <Image
           src="https://www.mo-residencesdanang.com/image/restaurant3.jpg"
           alt=""
         />
