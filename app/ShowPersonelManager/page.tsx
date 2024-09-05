@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import PersonelManager from "../component/PersonelManager";
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div>
+      <PersonelManager />
+    </div>
+  );
+};
 
-export default page
+export default page;
