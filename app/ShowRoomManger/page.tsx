@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import RoomManager from "../component/RoomManager";
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div>
+      <RoomManager />
+    </div>
+  );
+};
 
-export default page
+export default page;
