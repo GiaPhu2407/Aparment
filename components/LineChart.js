@@ -55,7 +55,7 @@ const LineChart = () => {
   }, []);
 
   return (
-    <div style={{ position: "relative", width: "30vw", height: "80vh" }}>
+    <div style={{ position: "relative", width: "25vw", height: "80vh" }}>
       <canvas id="myChart" ref={chartRef}></canvas>
     </div>
   );

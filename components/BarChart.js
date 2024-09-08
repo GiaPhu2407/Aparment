@@ -15,7 +15,15 @@ const BarChart = () => {
       const newChart = new Chart(context, {
         type: "bar",
         data: {
-          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+          labels: [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+          ],
           datasets: [
             {
               label: "# of Votes",
