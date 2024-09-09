@@ -17,6 +17,7 @@ import { TbBrandBooking } from "react-icons/tb";
 import { MdOutlineBedroomParent } from "react-icons/md";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaChartLine } from "react-icons/fa";
+import Home from "@/components/Them";
 
 export function RoomManager() {
   const links = [
@@ -143,7 +144,7 @@ export const LogoIcon = () => {
 const Dashboard = () => {
   return (
     <div>
-      <div className="flex justify-between  items-center mt-10 ml-10">
+      <div className="flex justify-between  items-center ml-10 mt-10">
         <div className="flex items-center space-x-2">
           <label htmlFor="room-type" className="mr-2">
             Hạng Phòng
@@ -156,77 +157,7 @@ const Dashboard = () => {
         </div>
 
         {/* You can open the modal using document.getElementById('ID').showModal() method */}
-        <button
-          className="btn"
-          onClick={() => {
-            const modal = document.getElementById("my_modal_4");
-
-            // Kiểm tra xem phần tử modal có tồn tại và phương thức showModal() có sẵn không
-            if (
-              modal &&
-              modal instanceof HTMLDialogElement &&
-              typeof modal.showModal === "function"
-            ) {
-              modal.showModal();
-            } else {
-              console.error(
-                "Modal element is not a valid HTMLDialogElement or showModal is not supported."
-              );
-            }
-          }}
-        >
-          Thêm Phòng
-        </button>
-        <dialog id="my_modal_4" className="modal ">
-          <div className="modal-box w-11/12 max-w-5xl ">
-            <div className="flex my-2">
-              <h3>Id</h3>
-              <input
-                type="text "
-                placeholder="Type here"
-                className="input input-bordered input-sm w-full max-w-xs ml-20"
-              />
-            </div>
-            <div className="flex my-2">
-              <h3>Ảnh</h3>
-              <input
-                type="file"
-                className="file-input file-input-bordered file-input-sm w-full max-w-xs ml-[60px]"
-              />
-            </div>
-            <div className="flex my-2">
-              <h3>Tên Phòng</h3>
-              <input
-                type="text"
-                placeholder="Type here"
-                className="input input-bordered input-sm w-full max-w-xs ml-3"
-              />
-            </div>
-            <div className="flex my-2">
-              <h3>Trạng Thái</h3>
-              <input
-                type="text"
-                placeholder="Type here"
-                className="input input-bordered input-sm w-full max-w-xs ml-3"
-              />
-            </div>
-            <div className="flex my-2">
-              <h3>Ngày Đặt</h3>
-              <input
-                type="date"
-                placeholder="Type here"
-                className="input input-bordered input-sm w-full max-w-xs ml-6"
-              />
-            </div>
-
-            <div className="modal-action">
-              <form method="dialog">
-                {/* if there is a button, it will close the modal */}
-                <button className="btn">Close</button>
-              </form>
-            </div>
-          </div>
-        </dialog>
+        <Home />
       </div>
 
       <div className="overflow-x-auto ">
