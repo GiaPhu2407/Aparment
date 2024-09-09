@@ -9,7 +9,7 @@ import {
 } from "@tabler/icons-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { GrUserManager } from "react-icons/gr";
 import { MdCleaningServices } from "react-icons/md";
@@ -94,7 +94,7 @@ export function RoomManager() {
                 label: "Gia Phu",
                 href: "#",
                 icon: (
-                  <Image
+                  <img
                     src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/428603879_3699291333727981_8450238390845543097_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF8eAl4DqSiHc45WD_3ZUa0Yj2_k1pIrCxiPb-TWkisLKdt4xrCZnSawKeji-j5xGqR90NFt9JrVnVNHzicN-9h&_nc_ohc=bOEh471GIxUQ7kNvgHsX5jW&_nc_ht=scontent.fdad2-1.fna&oh=00_AYDcWgJsXxzR4n9Z_AzzVIwJKxH7nhOj5EkpjS99C-PUzg&oe=66DB9B05"
                     className="h-7 w-7 flex-shrink-0 rounded-full"
                     width={50}
@@ -142,24 +142,176 @@ export const LogoIcon = () => {
 // Dummy dashboard component with content
 const Dashboard = () => {
   return (
-    <div className="flex flex-1">
-      <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col gap-2 flex-1 w-full h-full">
-        <div className="flex gap-2">
-          {[...new Array(4)].map((i) => (
-            <div
-              key={"first-array" + i}
-              className="h-20 w-full rounded-lg  bg-gray-100 dark:bg-neutral-800 animate-pulse"
-            ></div>
-          ))}
+    <div>
+      <div className="flex justify-between  items-center mt-10 ml-10">
+        <div className="flex items-center space-x-2">
+          <label htmlFor="room-type" className="mr-2">
+            Hạng Phòng
+          </label>
+          <select id="room-type" className="border border-gray-300 p-2 rounded">
+            <option>Phòng VIP</option>
+            <option>Phòng Tiêu Chuẩn</option>
+            <option>Phòng Đơn</option>
+          </select>
         </div>
-        <div className="flex gap-2 flex-1">
-          {[...new Array(2)].map((i) => (
-            <div
-              key={"second-array" + i}
-              className="h-full w-full rounded-lg  bg-gray-100 dark:bg-neutral-800 animate-pulse"
-            ></div>
-          ))}
-        </div>
+
+        {/* You can open the modal using document.getElementById('ID').showModal() method */}
+        <button
+          className="btn"
+          onClick={() => document.getElementById("my_modal_4").showModal()}
+        >
+          Thêm Phòng
+        </button>
+        <dialog id="my_modal_4" className="modal">
+          <div className="modal-box w-11/12 max-w-5xl">
+            <div className="flex">
+              <h3>Id</h3>
+              <input type="text" name="" id="" className="ml-10" />
+            </div>
+            <div className="flex">
+              <h3>Ảnh</h3>
+              <input
+                type="file"
+                className="file-input file-input-bordered file-input-sm w-full max-w-xs"
+              />
+            </div>
+            <div className="flex">
+              <h3>Tên Phòng</h3>
+              <input type="text" name="" id="" className="ml-10" />
+            </div>
+            <div className="flex">
+              <h3></h3>
+              <input type="text" name="" id="" className="ml-10" />
+            </div>
+            <div className="flex">
+              <h3>Id</h3>
+              <input type="text" name="" id="" className="ml-10" />
+            </div>
+
+            <div className="modal-action">
+              <form method="dialog">
+                {/* if there is a button, it will close the modal */}
+                <button className="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      </div>
+
+      <div className="overflow-x-auto ">
+        <table className="min-w-full table-auto mt-20 ">
+          <thead>
+            <tr>
+              <th className="px-10 py-3 text-left">Id</th>
+              <th className="px-10 py-3 text-left">Ảnh</th>
+              <th className="px-10 py-3 text-left">Tên phòng</th>
+              <th className="px-10 py-3 text-left">Trạng Thái</th>
+              <th className="px-10 py-3 text-left">Lịch Đặt Phòng</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b">
+              <td className="px-10 py-4">1</td>
+              <td className=" py-4 text-center">
+                <div className="flex justify-center">
+                  <img
+                    className="w-20 h-auto"
+                    src="https://asiky.com/files/images/Article/tin-tuc/chup-anh-khach-san.jpg"
+                    alt="Room Image"
+                  />
+                </div>
+              </td>
+              <td className="px-10 py-4">Phòng VIP</td>
+              <td className="px-10 py-4">Đang ở</td>
+              <td className="px-10 py-4">8/9/2024</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr className="border-b">
+              <td className="px-10 py-4">2</td>
+              <td className=" py-4 text-center">
+                <div className="flex justify-center">
+                  <img
+                    className="w-20 h-auto"
+                    src="https://asiky.com/files/images/Article/tin-tuc/chup-anh-khach-san.jpg"
+                    alt="Room Image"
+                  />
+                </div>
+              </td>
+              <td className="px-10 py-4">Phòng VIP</td>
+              <td className="px-10 py-4">Đang ở</td>
+              <td className="px-10 py-4">8/9/2024</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr className="border-b">
+              <td className="px-10 py-4">3</td>
+              <td className=" py-4 text-center">
+                <div className="flex justify-center">
+                  <img
+                    className="w-20 h-auto"
+                    src="https://asiky.com/files/images/Article/tin-tuc/chup-anh-khach-san.jpg"
+                    alt="Room Image"
+                  />
+                </div>
+              </td>
+              <td className="px-10 py-4">Phòng VIP</td>
+              <td className="px-10 py-4">Đang ở</td>
+              <td className="px-10 py-4">8/9/2024</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr className="border-b">
+              <td className="px-10 py-4">4</td>
+              <td className=" py-4 text-center">
+                <div className="flex justify-center">
+                  <img
+                    className="w-20 h-auto"
+                    src="https://asiky.com/files/images/Article/tin-tuc/chup-anh-khach-san.jpg"
+                    alt="Room Image"
+                  />
+                </div>
+              </td>
+              <td className="px-10 py-4">Phòng VIP</td>
+              <td className="px-10 py-4">Đang ở</td>
+              <td className="px-10 py-4">8/9/2024</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr className="border-b">
+              <td className="px-10 py-4">5</td>
+              <td className=" py-4 text-center">
+                <div className="flex justify-center">
+                  <img
+                    className="w-20 h-auto"
+                    src="https://asiky.com/files/images/Article/tin-tuc/chup-anh-khach-san.jpg"
+                    alt="Room Image"
+                  />
+                </div>
+              </td>
+              <td className="px-10 py-4">Phòng VIP</td>
+              <td className="px-10 py-4">Đang ở</td>
+              <td className="px-10 py-4">8/9/2024</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr className="border-b">
+              <td className="px-10 py-4">6</td>
+              <td className=" py-4 text-center">
+                <div className="flex justify-center">
+                  <img
+                    className="w-20 h-auto"
+                    src="https://asiky.com/files/images/Article/tin-tuc/chup-anh-khach-san.jpg"
+                    alt="Room Image"
+                  />
+                </div>
+              </td>
+              <td className="px-10 py-4">Phòng VIP</td>
+              <td className="px-10 py-4">Đang ở</td>
+              <td className="px-10 py-4">8/9/2024</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );
