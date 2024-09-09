@@ -158,7 +158,22 @@ const Dashboard = () => {
         {/* You can open the modal using document.getElementById('ID').showModal() method */}
         <button
           className="btn"
-          onClick={() => document.getElementById("my_modal_4").showModal()}
+          onClick={() => {
+            const modal = document.getElementById("my_modal_4");
+
+            // Kiểm tra xem phần tử modal có tồn tại và phương thức showModal() có sẵn không
+            if (
+              modal &&
+              modal instanceof HTMLDialogElement &&
+              typeof modal.showModal === "function"
+            ) {
+              modal.showModal();
+            } else {
+              console.error(
+                "Modal element is not a valid HTMLDialogElement or showModal is not supported."
+              );
+            }
+          }}
         >
           Thêm Phòng
         </button>
