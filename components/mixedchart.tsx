@@ -4,7 +4,7 @@
 import dynamic from "next/dynamic";
 import "chart.js/auto";
 
-const Chart = dynamic(
+const Scatter = dynamic(
   () => import("react-chartjs-2").then((mod) => mod.Scatter),
   {
     ssr: false,
@@ -35,7 +35,7 @@ const MixedDemoPage = () => {
   return (
     <div className="w-[30vw]">
       {/* <h1>Example 2: Bar Chart</h1> */}
-      <Chart data={data} />
+      {/* <Scatter data={data} /> */}
     </div>
   );
 };
