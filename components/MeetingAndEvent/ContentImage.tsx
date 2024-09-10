@@ -20,7 +20,7 @@ const ContentImage = () => {
           <div className="w-full md:w-[500px]">
             <div className="carousel h-[300px] w-full">
               <div id="slide1" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://digital.ihg.com/is/image/ihg/ihg-meetings-events-lp-offer-2column-tile-1-usen-svp-1280x722"
                   className="w-full"
                   alt=""
@@ -35,7 +35,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide2" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/Rooms_30-scaled-510x360.jpg"
                   className="w-full"
                   alt=""
@@ -50,7 +50,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide3" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/Room_32-scaled-510x360.jpg"
                   className="w-full"
                   alt=""
@@ -65,7 +65,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide4" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/Room_33-scaled-510x360.jpg"
                   className="w-full"
                   alt=""
@@ -80,7 +80,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide5" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/Room_31-scaled-510x360.jpg"
                   className="w-full"
                   alt=""
@@ -95,7 +95,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide6" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/Rooms_12-scaled-510x360.jpg"
                   className="w-full"
                   alt=""
@@ -143,7 +143,7 @@ const ContentImage = () => {
           <div className="w-full md:w-[500px]">
             <div className="carousel h-[300px] w-full">
               <div id="slide1_2" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://digital.ihg.com/is/image/ihg/ihg-meetings-events-lp-offer-2column-tile-2-usen-svp-1280x722"
                   className="w-full"
                   alt=""
@@ -158,7 +158,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide2_2" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/z4285810696769_564a7fec7bd12ad33518c13eb621431c-510x360.jpg"
                   className="w-full"
                   alt=""
@@ -173,7 +173,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide3_2" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/z4285810674619_5e060452b26f7d90cc8f67cccdc6b014-510x360.jpg"
                   className="w-full"
                   alt=""
@@ -188,7 +188,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide4_2" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/z4285810650920_2c47d0c9e65e8bbb1b23f7f8aea00d9a-510x360.jpg"
                   className="w-full"
                   alt=""
@@ -203,7 +203,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide5_2" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/z4285810648780_4fd7c64cccbc8e2c096445c023faf13f-510x360.jpg"
                   className="w-full"
                   alt=""
@@ -218,7 +218,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide6_2" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/z4285810650920_2c47d0c9e65e8bbb1b23f7f8aea00d9a-510x360.jpg"
                   className="w-full"
                   alt=""
@@ -267,7 +267,7 @@ const ContentImage = () => {
           <div className="w-full md:w-[500px]">
             <div className="carousel h-[300px] w-full">
               <div id="slide1_3" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://digital.ihg.com/is/image/ihg/ihg-meetings-events-lp-offer-2column-tile-3-usen-svp-1280x722-1"
                   className="w-full"
                   alt="Room 1"
@@ -282,7 +282,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide2_3" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/Rooms_29-scaled-510x360.jpg"
                   className="w-full"
                   alt="Room 1"
@@ -297,7 +297,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide3_3" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/Rooms_28-scaled-510x360.jpg"
                   className="w-full"
                   alt="Room 1"
@@ -345,7 +345,7 @@ const ContentImage = () => {
           <div className="w-full md:w-[500px]">
             <div className="carousel h-[300px] w-full">
               <div id="slide1_4" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://digital.ihg.com/is/image/ihg/ihg-meetings-events-lp-offer-2column-tile-4-usen-svp-1280x722"
                   className="w-full"
                   alt="Room 2"
@@ -360,7 +360,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slid2_4" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/Room_38-scaled-510x360.jpg"
                   className="w-full"
                   alt="Room 2"
@@ -375,7 +375,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide3_4" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/Room_36-scaled-510x360.jpg"
                   className="w-full"
                   alt="Room 2"
@@ -390,7 +390,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide4_4" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/z4285810650920_2c47d0c9e65e8bbb1b23f7f8aea00d9a-510x360.jpg"
                   className="w-full"
                   alt="Room 2"
@@ -405,7 +405,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide5_4" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/Room_37-scaled-510x360.jpg"
                   className="w-full"
                   alt="Room 2"
@@ -420,7 +420,7 @@ const ContentImage = () => {
                 </div>
               </div>
               <div id="slide6_4" className="carousel-item relative w-full">
-                <Image
+                <img
                   src="https://amazinghotel.com.vn/wp-content/uploads/2021/06/Room_35-scaled-510x360.jpg"
                   className="w-full"
                   alt="Room 2"
