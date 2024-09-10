@@ -21,6 +21,14 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/BarChart.js", "components/Modal.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "components/BarChart.js",
+    "components/Modal.js",
+    "components/Them.tsx"
+  ],
   "exclude": ["node_modules"]
 }

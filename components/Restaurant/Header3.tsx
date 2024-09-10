@@ -12,7 +12,7 @@ const Header3 = () => {
   return (
     <div className="bg-white dark:bg-gray-400 flex flex-col items-center w-full box-sizing-border f">
       <div className="w-full">
-        <Image
+        <img
           src="https://www.mo-residencesdanang.com/image/restaurant_banner.jpg"
           alt=""
           className="relative w-full"
@@ -38,7 +38,7 @@ const Header3 = () => {
               href="https://flowbite.com"
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
-              <Image
+              <img
                 src="https://logo-suggestion.renderforest.com/suggestions-images/0008/a533/0008a533e7d0fdc0dd2cb35fb5194474.png"
                 className="h-20"
                 alt="Flowbite Logo"
