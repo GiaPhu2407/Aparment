@@ -18,9 +18,9 @@ import { MdOutlineBedroomParent } from "react-icons/md";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaChartLine } from "react-icons/fa";
 import { FileSymlink } from "lucide-react";
-import BarChart from "@/components/BarChart";
-import PieChart from "@/components/pieChart";
-import LineChart from "@/components/LineChart";
+import PieChartDemo from "@/components/pieChart";
+import LineChartDemo from "@/components/LineChart";
+import ChartDemoPage from "@/components/BarChart";
 
 export function SidebarDemo() {
   const links = [
@@ -205,30 +205,30 @@ const Dashboard = () => {
       </div>
       <div className="flex">
         <div>
-          <BarChart />
+          <ChartDemoPage />
         </div>
         <div className="ml-10">
-          <PieChart />
+          <PieChartDemo />
         </div>
       </div>
       <div className="flex flex-wrap justify-start gap-7">
         <div className="p-0 m-0 h-[300px]">
-          <LineChart />
+          <LineChartDemo />
         </div>
         <div className="p-0 m-0  h-[300px]">
-          <LineChart />
+          <LineChartDemo />
         </div>
         <div className="p-0 m-0 h-[300px]">
-          <LineChart />
+          <LineChartDemo />
         </div>
         <div className="p-0 m-0 h-[300px]">
-          <LineChart />
+          <LineChartDemo />
         </div>
         <div className="p-0 m-0  h-[300px]">
-          <LineChart />
+          <LineChartDemo />
         </div>
         <div className="p-0 m-0  h-[300px]">
-          <LineChart />
+          <LineChartDemo />
         </div>
       </div>
     </div>
