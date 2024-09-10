@@ -24,7 +24,7 @@ const ContentConnect = () => {
           </div>
         </div>
 
-        <Image
+        <img
           className="w-full min-w-full mx-auto mt-12 scale-150 max-w-7xl lg:min-w-0 lg:mt-0 lg:scale-100"
           src="https://cdn.rareblocks.xyz/collection/celebration/images/integration/1/services-icons.png"
           alt=""
