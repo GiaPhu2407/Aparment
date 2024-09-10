@@ -21,6 +21,8 @@ import { FileSymlink } from "lucide-react";
 import PieChartDemo from "@/components/pieChart";
 import LineChartDemo from "@/components/LineChart";
 import ChartDemoPage from "@/components/BarChart";
+import PolarChartDemo from "@/components/Polararea";
+import MixedChartDemo from "@/components/mixedchart";
 
 export function SidebarDemo() {
   const links = [
@@ -229,6 +231,14 @@ const Dashboard = () => {
         </div>
         <div className="p-0 m-0  h-[300px]">
           <LineChartDemo />
+        </div>
+      </div>
+      <div className="flex gap-5">
+        <div>
+          <PolarChartDemo />
+        </div>
+        <div>
+          <MixedChartDemo />
         </div>
       </div>
     </div>
