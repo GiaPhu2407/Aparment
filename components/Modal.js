@@ -11,7 +11,7 @@ const Modal = ({ isOpen, onClose, onAdd }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="bg-white rounded-lg shadow-lg p-6 w-11/12 max-w-5xl">
+      <div className="bg-white rounded-lg shadow-lg p-6 w-11/12 max-w-2xlxl">
         <div className="flex flex-col space-y-4">
           <div className="flex items-center">
             <h3 className="w-1/4">Id</h3>

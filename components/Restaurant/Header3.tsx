@@ -10,7 +10,7 @@ const Header3 = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
   return (
-    <div className="bg-white dark:bg-gray-400 flex flex-col items-center w-full box-sizing-border f">
+    <div className="bg-white dark:bg-gray-400 flex flex-col items-center w-full box-sizing-border ">
       <div className="w-full">
         <img
           src="https://www.mo-residencesdanang.com/image/restaurant_banner.jpg"

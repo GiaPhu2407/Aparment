@@ -30,7 +30,7 @@ const Header1 = () => {
               href="https://flowbite.com"
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
-              <Image
+              <img
                 src="https://logo-suggestion.renderforest.com/suggestions-images/0008/a533/0008a533e7d0fdc0dd2cb35fb5194474.png"
                 className="h-20"
                 alt="Flowbite Logo"
