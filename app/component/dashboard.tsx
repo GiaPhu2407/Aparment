@@ -23,6 +23,7 @@ import LineChartDemo from "@/components/LineChart";
 import ChartDemoPage from "@/components/BarChart";
 import PolarChartDemo from "@/components/Polararea";
 import MixedChartDemo from "@/components/mixedchart";
+import RadarChartDemo from "@/components/radarchart";
 
 export function SidebarDemo() {
   const links = [
@@ -239,6 +240,9 @@ const Dashboard = () => {
         </div>
         <div>
           <MixedChartDemo />
+        </div>
+        <div>
+          <RadarChartDemo />
         </div>
       </div>
     </div>
