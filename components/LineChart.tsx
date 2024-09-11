@@ -37,7 +37,7 @@ const data = {
 
 const LineDemoPage = () => {
   return (
-    <div className="w-[30vw]">
+    <div className="w-[40vw]">
       {/* <h1>Example 2: Bar Chart</h1> */}
       <Line data={data} />
     </div>

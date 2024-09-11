@@ -26,12 +26,12 @@ const data = {
       ],
     },
   ],
-  hoverOffset:10 
+  hoverOffset: 10,
 };
 
 const PolarDemoPage = () => {
   return (
-    <div className="w-[30vw]">
+    <div className="w-[20vw]">
       {/* <h1>Example 2: Bar Chart</h1> */}
       <Polar data={data} />
     </div>

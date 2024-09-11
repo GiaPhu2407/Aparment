@@ -84,7 +84,7 @@ const exportToExcel = async () => {
 // Trang hiển thị biểu đồ và nút xuất Excel
 const RadarDemoPage = () => {
   return (
-    <div className="w-[30vw]">
+    <div className="w-[20vw]">
       <Radar data={data} />
       <button
         onClick={exportToExcel}

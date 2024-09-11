@@ -161,7 +161,7 @@ const exportToExcel = async () => {
 
 const ChartDemoPage = () => {
   return (
-    <div className="w-[50vw]">
+    <div className="w-[30vw]">
       <h1>Example 2: Bar Chart</h1>
       <Bar data={data} />
       <button

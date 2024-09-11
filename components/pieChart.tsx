@@ -38,7 +38,7 @@ const data = {
 
 const PieChartDemo = () => {
   return (
-    <div className="w-[30vw]">
+    <div className="w-[20vw]">
       {/* <h1>Example 2: Bar Chart</h1> */}
       <Pie data={data} />
     </div>
