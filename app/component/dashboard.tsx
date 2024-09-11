@@ -24,7 +24,7 @@ import ChartDemoPage from "@/components/BarChart";
 import PolarChartDemo from "@/components/Polararea";
 import MixedChartDemo from "@/components/mixedchart";
 import RadarChartDemo from "@/components/radarchart";
-
+import { GoPeople } from "react-icons/go";
 export function SidebarDemo() {
   const links = [
     {
@@ -246,12 +246,42 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="relative">
-        <div className="absolute top-0 right-28 w-[100px] h-[50px] mt-2">
+        <div className="absolute top-0 right-36 w-[100px] h-[50px] mt-2 ">
           <p>Notification</p>
-          <div className="">
+          <div className="flex my-5">
+            <div className="mt-1 ">
+              <GoPeople />
+            </div>
             <div>
               <p className="whitespace-nowrap">You have a bug that needs....</p>
-              <p className="">5m ago</p>
+              <p className="text-sm text-gray-500">5m ago</p>
+            </div>
+          </div>
+          <div className="flex my-5">
+            <div className="mt-1 ">
+              <GoPeople />
+            </div>
+            <div>
+              <p className="whitespace-nowrap">You have a bug that needs....</p>
+              <p className="text-sm text-gray-500">5m ago</p>
+            </div>
+          </div>
+          <div className="flex my-5">
+            <div className="mt-1 ">
+              <GoPeople />
+            </div>
+            <div>
+              <p className="whitespace-nowrap">You have a bug that needs....</p>
+              <p className="text-sm text-gray-500">5m ago</p>
+            </div>
+          </div>
+          <div className="flex my-5">
+            <div className="mt-1 ">
+              <GoPeople />
+            </div>
+            <div>
+              <p className="whitespace-nowrap">You have a bug that needs....</p>
+              <p className="text-sm text-gray-500">5m ago</p>
             </div>
           </div>
         </div>
