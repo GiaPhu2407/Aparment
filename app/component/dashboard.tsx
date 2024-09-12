@@ -394,6 +394,82 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      {/* Content 3  */}
+      <div className="relative">
+        <div className="absolute top-[750px] right-44 w-[100px] h-[50px] mt-2 ">
+          <p className="font-extrabold">Contacts</p>
+          <div className="flex my-5">
+            <div className="avatar   ">
+              <div className="w-8 h-8">
+                <img
+                  src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/428603879_3699291333727981_8450238390845543097_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF8eAl4DqSiHc45WD_3ZUa0Yj2_k1pIrCxiPb-TWkisLKdt4xrCZnSawKeji-j5xGqR90NFt9JrVnVNHzicN-9h&_nc_ohc=cBtDM4VOrzgQ7kNvgGzZVqa&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=A828t2YNiXD0IX9947EaHtO&oh=00_AYCPO6al1z14lOE9jh_4FC8I62G66_fmYVo3qVbfU0VEpw&oe=66E85985"
+                  alt=""
+                  className=" rounded-full"
+                />
+              </div>
+            </div>
+            <div>
+              <p className="whitespace-nowrap ml-2">Gia Phu</p>
+            </div>
+          </div>
+          <div className="flex my-5">
+            <div className="avatar   ">
+              <div className="w-8 h-8">
+                <img
+                  src="https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/440943990_3551789455042108_2565515360192367734_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFXG90i3fJyDLzbanQykfLJ-GDsEHpP54b4YOwQek_nhrCFWj0HHcUawSEq1g4dFpFSwietwkWeiTJ1ybfJp3wp&_nc_ohc=MePK9oKzkoMQ7kNvgH5FaSV&_nc_ht=scontent.fdad1-4.fna&_nc_gid=AuXIjTZmlZD8b1lLKqygn8S&oh=00_AYAis50L2ger5m8spIeJM9evuDWsyafXqy1j7_B8audMhA&oe=66E8C611"
+                  alt=""
+                  className=" rounded-full"
+                />
+              </div>
+            </div>
+            <div>
+              <p className="whitespace-nowrap ml-2">Diu Hien</p>
+            </div>
+          </div>
+          <div className="flex my-5">
+            <div className="avatar   ">
+              <div className="w-8 h-8">
+                <img
+                  src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/426594388_952879249774939_1978058452152390104_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFCurdSdJnfrRgBDMWHNCIYgTZw5PRQ11-BNnDk9FDXX1hU34RVY15yxIDM5SBryw4Ii1pl_12qn4bhgCXjFQkk&_nc_ohc=dQ6hjXNR4YAQ7kNvgHTvxbq&_nc_ht=scontent.fdad2-1.fna&oh=00_AYDy3m7sUqrpB-KlQX2FrdnN-yTsRUssyxg-vMQbEPUDTg&oe=66E8D0C4"
+                  alt=""
+                  className=" rounded-full"
+                />
+              </div>
+            </div>
+            <div>
+              <p className="whitespace-nowrap ml-2">Le Huy</p>
+            </div>
+          </div>
+          <div className="flex my-5">
+            <div className="avatar   ">
+              <div className="w-8 h-8">
+                <img
+                  src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/455112302_1525163028117234_8150191852465374999_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGOeOd-aodiE6m6YLLBDD2yLiUBIhY_w84uJQEiFj_DzlHmEYhP-Y-Mq-wIYmWdbgtSBe5H6V-2zKZIhgR6vRWd&_nc_ohc=WFE6RxJMiMoQ7kNvgFMLHNt&_nc_ht=scontent.fdad1-3.fna&_nc_gid=A0RQP5Yqqlczw4omYzkREO3&oh=00_AYAwgbF7r9PR2x_dLp8m7os7reSw3ndhYjnKlS2D3Q2Yfw&oe=66E8C6A9"
+                  alt=""
+                  className=" rounded-full"
+                />
+              </div>
+            </div>
+            <div>
+              <p className="whitespace-nowrap ml-2">Viet Ngu</p>
+            </div>
+          </div>
+          <div className="flex my-5">
+            <div className="avatar   ">
+              <div className="w-8 h-8">
+                <img
+                  src="https://scontent.fdad1-4.fna.fbcdn.net/v/t39.30808-6/333578710_152449781004654_2005173142519798115_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEFhCPe6nS0mnDJ8MJEmw01xhvjZ-YqJYXGG-Nn5iolhQ7yjRTX65m03wUGqMeYPna4dQXjgubUU4uOyyCO0R7F&_nc_ohc=6YNYRoj5iCAQ7kNvgH9Vj8a&_nc_ht=scontent.fdad1-4.fna&_nc_gid=AmnYEvt6idjWJfTJAqz-0Nq&oh=00_AYCXnd0mvOWS4o6Uj4laWVZfmdbNkrQCB3EY4YKH6J3pQw&oe=66E8B280"
+                  alt=""
+                  className=" rounded-full"
+                />
+              </div>
+            </div>
+            <div>
+              <p className="whitespace-nowrap ml-2">Quoc Thinh</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
