@@ -451,7 +451,7 @@ const Dashboard = () => {
               </div>
             </div>
             <div>
-              <p className="whitespace-nowrap ml-2">Viet Ngu</p>
+              <p className="whitespace-nowrap ml-2">Ba Viet</p>
             </div>
           </div>
           <div className="flex my-5">
