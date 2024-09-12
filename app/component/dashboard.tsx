@@ -245,9 +245,10 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      {/* Content 1  */}
       <div className="relative">
         <div className="absolute top-0 right-36 w-[100px] h-[50px] mt-2 ">
-          <p>Notification</p>
+          <p className="font-extrabold">Notification</p>
           <div className="flex my-5">
             <div className="mt-1 ">
               <GoPeople />
@@ -262,8 +263,8 @@ const Dashboard = () => {
               <GoPeople />
             </div>
             <div>
-              <p className="whitespace-nowrap">You have a bug that needs....</p>
-              <p className="text-sm text-gray-500">5m ago</p>
+              <p className="whitespace-nowrap">New user registered</p>
+              <p className="text-sm text-gray-500">1:23 AM</p>
             </div>
           </div>
           <div className="flex my-5">
@@ -272,6 +273,30 @@ const Dashboard = () => {
             </div>
             <div>
               <p className="whitespace-nowrap">You have a bug that needs....</p>
+              <p className="text-sm text-gray-500">0:32 AM</p>
+            </div>
+          </div>
+          <div className="flex my-5">
+            <div className="mt-1 ">
+              <GoPeople />
+            </div>
+            <div>
+              <p className="whitespace-nowrap">Andi Lane subscribed to you</p>
+              <p className="text-sm text-gray-500">Yesterday 12:39 AM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Content 2 */}
+      <div className="relative">
+        <div className="absolute top-[350px] right-36 w-[100px] h-[50px] mt-2 ">
+          <p className="font-extrabold">Activities</p>
+          <div className="flex my-5">
+            <div className="mt-1 ">
+              <GoPeople />
+            </div>
+            <div>
+              <p className="whitespace-nowrap">Endited the details of Project X</p>
               <p className="text-sm text-gray-500">5m ago</p>
             </div>
           </div>
@@ -280,8 +305,26 @@ const Dashboard = () => {
               <GoPeople />
             </div>
             <div>
+              <p className="whitespace-nowrap">New user registered</p>
+              <p className="text-sm text-gray-500">1:23 AM</p>
+            </div>
+          </div>
+          <div className="flex my-5">
+            <div className="mt-1 ">
+              <GoPeople />
+            </div>
+            <div>
               <p className="whitespace-nowrap">You have a bug that needs....</p>
-              <p className="text-sm text-gray-500">5m ago</p>
+              <p className="text-sm text-gray-500">0:32 AM</p>
+            </div>
+          </div>
+          <div className="flex my-5">
+            <div className="mt-1 ">
+              <GoPeople />
+            </div>
+            <div>
+              <p className="whitespace-nowrap">Andi Lane subscribed to you</p>
+              <p className="text-sm text-gray-500">Yesterday 12:39 AM</p>
             </div>
           </div>
         </div>
