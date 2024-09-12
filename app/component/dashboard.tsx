@@ -298,8 +298,12 @@ const Dashboard = () => {
         <div className="absolute top-[350px] right-36 w-[100px] h-[50px] mt-2 ">
           <p className="font-extrabold">Activities</p>
           <div className="flex my-5">
-            <div className="mt-1 ">
-              <GoPeople />
+            <div className="mt-1  ">
+              <img
+                src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/428603879_3699291333727981_8450238390845543097_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF8eAl4DqSiHc45WD_3ZUa0Yj2_k1pIrCxiPb-TWkisLKdt4xrCZnSawKeji-j5xGqR90NFt9JrVnVNHzicN-9h&_nc_ohc=cBtDM4VOrzgQ7kNvgGzZVqa&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=A828t2YNiXD0IX9947EaHtO&oh=00_AYCPO6al1z14lOE9jh_4FC8I62G66_fmYVo3qVbfU0VEpw&oe=66E85985"
+                alt=""
+                className="text-sm rounded-xl"
+              />
             </div>
             <div>
               <p className="whitespace-nowrap ml-2">
@@ -310,34 +314,70 @@ const Dashboard = () => {
           </div>
           <div className="flex my-5">
             <div className="mt-1 ">
-              <GoPeople />
+              <img
+                src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/428603879_3699291333727981_8450238390845543097_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF8eAl4DqSiHc45WD_3ZUa0Yj2_k1pIrCxiPb-TWkisLKdt4xrCZnSawKeji-j5xGqR90NFt9JrVnVNHzicN-9h&_nc_ohc=cBtDM4VOrzgQ7kNvgGzZVqa&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=A828t2YNiXD0IX9947EaHtO&oh=00_AYCPO6al1z14lOE9jh_4FC8I62G66_fmYVo3qVbfU0VEpw&oe=66E85985"
+                alt=""
+                className="text-sm rounded-xl"
+              />
             </div>
             <div>
-              <p className="whitespace-nowrap ml-2">Changed the status of Project</p>
+              <p className="whitespace-nowrap ml-2">
+                Changed the status of Project
+              </p>
               <p className="text-sm text-gray-500 ml-2">1:23 AM</p>
             </div>
           </div>
           <div className="flex my-5">
             <div className="mt-1 ">
-              <GoPeople />
+              <img
+                src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/428603879_3699291333727981_8450238390845543097_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF8eAl4DqSiHc45WD_3ZUa0Yj2_k1pIrCxiPb-TWkisLKdt4xrCZnSawKeji-j5xGqR90NFt9JrVnVNHzicN-9h&_nc_ohc=cBtDM4VOrzgQ7kNvgGzZVqa&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=A828t2YNiXD0IX9947EaHtO&oh=00_AYCPO6al1z14lOE9jh_4FC8I62G66_fmYVo3qVbfU0VEpw&oe=66E85985"
+                alt=""
+                className="text-sm rounded-xl"
+              />
             </div>
             <div>
-              <p className="whitespace-nowrap ml-2">
-                Submitted a bug
-              </p>
+              <p className="whitespace-nowrap ml-2">Submitted a bug</p>
               <p className="text-sm text-gray-500 ml-2">Yesterday 12:39 AM</p>
             </div>
           </div>
           <div className="flex my-5">
             <div className="mt-1 ">
-              <GoPeople />
+              <img
+                src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/428603879_3699291333727981_8450238390845543097_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF8eAl4DqSiHc45WD_3ZUa0Yj2_k1pIrCxiPb-TWkisLKdt4xrCZnSawKeji-j5xGqR90NFt9JrVnVNHzicN-9h&_nc_ohc=cBtDM4VOrzgQ7kNvgGzZVqa&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=A828t2YNiXD0IX9947EaHtO&oh=00_AYCPO6al1z14lOE9jh_4FC8I62G66_fmYVo3qVbfU0VEpw&oe=66E85985"
+                alt=""
+                className="text-sm rounded-xl"
+              />
             </div>
             <div>
               <p className="whitespace-nowrap ml-2">
-                Andi Lane subscribed to you
+                Modified A data in Page X
               </p>
-              <p className="text-sm text-gray-500 ml-2
-              ">Yesterday 12:39 AM</p>
+              <p
+                className="text-sm text-gray-500 ml-2
+              "
+              >
+                Last Thursday 3:34 AM
+              </p>
+            </div>
+          </div>
+          <div className="flex my-5">
+            <div className="mt-1 ">
+              <img
+                src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/428603879_3699291333727981_8450238390845543097_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF8eAl4DqSiHc45WD_3ZUa0Yj2_k1pIrCxiPb-TWkisLKdt4xrCZnSawKeji-j5xGqR90NFt9JrVnVNHzicN-9h&_nc_ohc=cBtDM4VOrzgQ7kNvgGzZVqa&_nc_ht=scontent.fsgn5-12.fna&_nc_gid=A828t2YNiXD0IX9947EaHtO&oh=00_AYCPO6al1z14lOE9jh_4FC8I62G66_fmYVo3qVbfU0VEpw&oe=66E85985"
+                alt=""
+                className="text-sm rounded-xl"
+              />
+            </div>
+            <div>
+              <p className="whitespace-nowrap ml-2">
+                Deleted a page in Project X
+              </p>
+              <p
+                className="text-sm text-gray-500 ml-2
+              "
+              >
+                Aug 11
+              </p>
             </div>
           </div>
         </div>
