@@ -250,12 +250,14 @@ const Dashboard = () => {
         <div className="absolute top-0 right-36 w-[100px] h-[50px] mt-2 ">
           <p className="font-extrabold">Notification</p>
           <div className="flex my-5">
-            <div className="mt-1 ">
+            <div className="mt-1  ">
               <GoPeople />
             </div>
             <div>
-              <p className="whitespace-nowrap">You have a bug that needs....</p>
-              <p className="text-sm text-gray-500">5m ago</p>
+              <p className="whitespace-nowrap ml-2">
+                You have a bug that needs....
+              </p>
+              <p className="text-sm text-gray-500 ml-2">5m ago</p>
             </div>
           </div>
           <div className="flex my-5">
@@ -263,8 +265,8 @@ const Dashboard = () => {
               <GoPeople />
             </div>
             <div>
-              <p className="whitespace-nowrap">New user registered</p>
-              <p className="text-sm text-gray-500">1:23 AM</p>
+              <p className="whitespace-nowrap ml-2">New user registered</p>
+              <p className="text-sm text-gray-500 ml-2">1:23 AM</p>
             </div>
           </div>
           <div className="flex my-5">
@@ -272,8 +274,10 @@ const Dashboard = () => {
               <GoPeople />
             </div>
             <div>
-              <p className="whitespace-nowrap">You have a bug that needs....</p>
-              <p className="text-sm text-gray-500">0:32 AM</p>
+              <p className="whitespace-nowrap ml-2">
+                You have a bug that needs....
+              </p>
+              <p className="text-sm text-gray-500 ml-2">0:32 AM</p>
             </div>
           </div>
           <div className="flex my-5">
@@ -281,8 +285,10 @@ const Dashboard = () => {
               <GoPeople />
             </div>
             <div>
-              <p className="whitespace-nowrap">Andi Lane subscribed to you</p>
-              <p className="text-sm text-gray-500">Yesterday 12:39 AM</p>
+              <p className="whitespace-nowrap ml-2">
+                Andi Lane subscribed to you
+              </p>
+              <p className="text-sm text-gray-500 ml-2">Yesterday 12:39 AM</p>
             </div>
           </div>
         </div>
@@ -296,8 +302,10 @@ const Dashboard = () => {
               <GoPeople />
             </div>
             <div>
-              <p className="whitespace-nowrap">Endited the details of Project X</p>
-              <p className="text-sm text-gray-500">5m ago</p>
+              <p className="whitespace-nowrap ml-2">
+                Endited the details of Project X
+              </p>
+              <p className="text-sm text-gray-500 ml-2">5m ago</p>
             </div>
           </div>
           <div className="flex my-5">
@@ -305,8 +313,8 @@ const Dashboard = () => {
               <GoPeople />
             </div>
             <div>
-              <p className="whitespace-nowrap">New user registered</p>
-              <p className="text-sm text-gray-500">1:23 AM</p>
+              <p className="whitespace-nowrap ml-2">Changed the status of Project</p>
+              <p className="text-sm text-gray-500 ml-2">1:23 AM</p>
             </div>
           </div>
           <div className="flex my-5">
@@ -314,8 +322,10 @@ const Dashboard = () => {
               <GoPeople />
             </div>
             <div>
-              <p className="whitespace-nowrap">You have a bug that needs....</p>
-              <p className="text-sm text-gray-500">0:32 AM</p>
+              <p className="whitespace-nowrap ml-2">
+                Submitted a bug
+              </p>
+              <p className="text-sm text-gray-500 ml-2">Yesterday 12:39 AM</p>
             </div>
           </div>
           <div className="flex my-5">
@@ -323,8 +333,11 @@ const Dashboard = () => {
               <GoPeople />
             </div>
             <div>
-              <p className="whitespace-nowrap">Andi Lane subscribed to you</p>
-              <p className="text-sm text-gray-500">Yesterday 12:39 AM</p>
+              <p className="whitespace-nowrap ml-2">
+                Andi Lane subscribed to you
+              </p>
+              <p className="text-sm text-gray-500 ml-2
+              ">Yesterday 12:39 AM</p>
             </div>
           </div>
         </div>
