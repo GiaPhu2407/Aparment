@@ -1,10 +1,10 @@
 import React from "react";
-import ClientManager from "../component/ClientManager";
+import ClientManager from "../component/ServiceManager";
 
 const page = () => {
   return (
     <div>
-      <ClientManager />
+      <ServiceManager />
     </div>
   );
 };

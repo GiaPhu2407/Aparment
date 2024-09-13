@@ -1,6 +1,6 @@
 import React from "react";
 import SidebarDemo from "./dashboard";
-import ClientManager from "./ClientManager";
+import ClientManager from "./ServiceManager";
 const Server = () => {
   return (
     <div>

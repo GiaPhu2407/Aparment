@@ -23,7 +23,7 @@ export function RoomManager() {
   const links = [
     {
       label: "Dashboard",
-      href: "#",
+      href: "/ShowDashBoard",
       icon: (
         <IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
@@ -195,7 +195,7 @@ const Dashboard = () => {
                 <div className="flex justify-center">
                   <img
                     className="w-20 h-auto"
-                    src="https://www.huongnghiepaau.com/wp-content/uploads/2018/06/cac-loai-phong-trong-resort.jpgh-san.jpg"
+                    src="https://acihome.vn/wp-content/uploads/2020/01/phong-Superior.jpg"
                     alt="Room Image"
                   />
                 </div>

@@ -36,7 +36,7 @@ export function PersonelManager() {
     },
     {
       label: "Quản lý dịch vụ",
-      href: "#",
+      href: "/ShowServiceManager",
       icon: (
         <MdCleaningServices className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
@@ -50,7 +50,7 @@ export function PersonelManager() {
     },
     {
       label: "Quản lý phòng",
-      href: "/ShowRoomManager",
+      href: "/ShowRoomManger",
       icon: (
         <MdOutlineBedroomParent className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),

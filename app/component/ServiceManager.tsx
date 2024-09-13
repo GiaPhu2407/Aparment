@@ -18,7 +18,7 @@ import { MdOutlineBedroomParent } from "react-icons/md";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaChartLine } from "react-icons/fa";
 
-export function ClientManager() {
+export function ServiceManager() {
   const links = [
     {
       label: "Dashboard",
@@ -253,4 +253,4 @@ const Dashboard = () => {
   );
 };
 
-export default ClientManager;
+export default ServiceManager;
