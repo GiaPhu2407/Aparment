@@ -34,6 +34,8 @@ export async function POST(request: NextRequest) {
   const userValidateCheck = UserSchema.safeParse({
     email: body.email,
     name: body.name,
+    address: body.address,
+    phone: body.phone,
   });
   //b1. Nếu dữ liệu không hợp lệ thì báo lỗi(trả về lỗi)
   if (!userValidateCheck.success) {
@@ -52,6 +54,8 @@ export async function POST(request: NextRequest) {
         data: {
           email: body.email,
           name: body.name,
+          address: body.address,
+          phone: body.phone,
         },
       });
       //d Trả về kết quả là dữ liệu vừa được tạo cùng với status:201

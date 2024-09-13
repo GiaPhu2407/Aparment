@@ -99,6 +99,11 @@ export async function PUT(
   const Check = Schema.safeParse({
     email: body.email,
     name: body.name,
+    // age: body.age,
+    // gender: body.gender,
+    address: body.address,
+    phone: body.phone,
+    // role: body.role,
   });
   if (!Check.success) {
     return NextResponse.json({ error: Check.error }, { status: 200 });
@@ -111,7 +116,12 @@ export async function PUT(
   } else {
     const user = await prisma.user.update({
       where: { id: userId },
-      data: { email: body.email, name: body.name },
+      data: {
+        email: body.email,
+        name: body.name,
+        address: body.address,
+        phone: body.phone,
+      },
     });
     return NextResponse.json(
       { message: `Cap nhat Id ${params.Id} thành công` },

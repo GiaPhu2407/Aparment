@@ -147,6 +147,8 @@ interface IUser {
   id: number;
   name: string;
   email: string;
+  address: string;
+  phone: string;
 }
 
 const Dashboard = () => {
@@ -236,6 +238,8 @@ const Dashboard = () => {
               <th>Id</th>
               <th>Name</th>
               <th>Email</th>
+              <th>Address</th>
+              <th>Phone</th>
             </tr>
           </thead>
           <tbody>
@@ -244,6 +248,8 @@ const Dashboard = () => {
                 <td>{user.id}</td>
                 <td>{user.name}</td>
                 <td>{user.email}</td>
+                <td>{user.address}</td>
+                <td>{user.phone}</td>
               </tr>
             ))}
           </tbody>
