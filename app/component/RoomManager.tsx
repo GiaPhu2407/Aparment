@@ -195,14 +195,14 @@ const Dashboard = () => {
                 <div className="flex justify-center">
                   <img
                     className="w-20 h-auto"
-                    src="https://asiky.com/files/images/Article/tin-tuc/chup-anh-khach-san.jpg"
+                    src="https://www.huongnghiepaau.com/wp-content/uploads/2018/06/cac-loai-phong-trong-resort.jpgh-san.jpg"
                     alt="Room Image"
                   />
                 </div>
               </td>
-              <td className="px-10 py-4">Phòng VIP</td>
-              <td className="px-10 py-4">Đang ở</td>
-              <td className="px-10 py-4">8/9/2024</td>
+              <td className="px-10 py-4">Phòng Tiêu Chuẩn</td>
+              <td className="px-10 py-4">Trống</td>
+              <td className="px-10 py-4"></td>
             </tr>
           </tbody>
           <tbody>
@@ -212,14 +212,14 @@ const Dashboard = () => {
                 <div className="flex justify-center">
                   <img
                     className="w-20 h-auto"
-                    src="https://asiky.com/files/images/Article/tin-tuc/chup-anh-khach-san.jpg"
+                    src="https://paloca.vn/pub/media/watermark/4/blog/cac-loai-phong-khach-san-5-sao-va-ki-hieu-cua-chung_3_.jpg"
                     alt="Room Image"
                   />
                 </div>
               </td>
-              <td className="px-10 py-4">Phòng VIP</td>
+              <td className="px-10 py-4">Phòng Tiêu Chuẩn</td>
               <td className="px-10 py-4">Đang ở</td>
-              <td className="px-10 py-4">8/9/2024</td>
+              <td className="px-10 py-4">10/9/2024</td>
             </tr>
           </tbody>
           <tbody>
@@ -246,14 +246,14 @@ const Dashboard = () => {
                 <div className="flex justify-center">
                   <img
                     className="w-20 h-auto"
-                    src="https://asiky.com/files/images/Article/tin-tuc/chup-anh-khach-san.jpg"
+                    src="https://ezcloud.vn/wp-content/uploads/2018/05/phong-suite-la-gi.webp"
                     alt="Room Image"
                   />
                 </div>
               </td>
               <td className="px-10 py-4">Phòng VIP</td>
               <td className="px-10 py-4">Đang ở</td>
-              <td className="px-10 py-4">8/9/2024</td>
+              <td className="px-10 py-4">12/9/2024</td>
             </tr>
           </tbody>
           <tbody>
@@ -263,14 +263,14 @@ const Dashboard = () => {
                 <div className="flex justify-center">
                   <img
                     className="w-20 h-auto"
-                    src="https://asiky.com/files/images/Article/tin-tuc/chup-anh-khach-san.jpg"
+                    src="https://dyf.vn/wp-content/uploads/2021/10/phong-suite-la-gi-tieu-chuan-thiet-ke-thi-cong-phong-suite-khach-san_617269191df02.jpeg"
                     alt="Room Image"
                   />
                 </div>
               </td>
               <td className="px-10 py-4">Phòng VIP</td>
-              <td className="px-10 py-4">Đang ở</td>
-              <td className="px-10 py-4">8/9/2024</td>
+              <td className="px-10 py-4">Trống</td>
+              <td className="px-10 py-4"></td>
             </tr>
           </tbody>
         </table>
