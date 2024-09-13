@@ -36,7 +36,7 @@ export function PersonelManager() {
     },
     {
       label: "Quản lý dịch vụ",
-      href: "#",
+      href: "/ShowServiceManager",
       icon: (
         <MdCleaningServices className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
@@ -80,7 +80,7 @@ export function PersonelManager() {
         "h-[1000px]"
       )}
     >
-      <Sidebar open={open} setOpen={setOpen}>
+      <Sidebar open={open} setOpen={setOpen} animate={false}>
         <SidebarBody className="justify-between gap-10">
           <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
             {open ? <Logo /> : <LogoIcon />}
@@ -147,11 +147,17 @@ interface IUser {
   id: number;
   name: string;
   email: string;
+  address: string;
+  phone: string;
+  image: string; // Thêm thuộc tính hình ảnh
 }
 
 const Dashboard = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [address, setAddress] = useState("");
+  const [phone, setPhone] = useState("");
+  const [image, setImage] = useState<File | null>(null); // Thêm state để lưu hình ảnh
   const [message, setMessage] = useState("");
   const [users, setUsers] = useState<IUser[]>([]);
 
@@ -179,10 +185,18 @@ const Dashboard = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    const formData = new FormData();
+    formData.append("email", email);
+    formData.append("name", name);
+    formData.append("address", address);
+    formData.append("phone", phone);
+    if (image) {
+      formData.append("image", image); // Thêm hình ảnh vào formData
+    }
+
     const response = await fetch("/api/users", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, name }),
+      body: formData, // Gửi formData thay vì JSON
     });
 
     const result = await response.json();
@@ -216,19 +230,42 @@ const Dashboard = () => {
               required
             />
           </div>
+          <div className="flex items-center mb-4">
+            <label>Địa Chỉ:</label>
+            <input
+              type="text"
+              name="address"
+              className="text-black rounded-sm mt-1  border ml-5"
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+              required
+            />
+          </div>
+          <div className="flex items-center mb-4">
+            <label>SĐT:</label>
+            <input
+              type="text"
+              name="phone"
+              className="text-black rounded-sm mt-1  border ml-5"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+            />
+          </div>
+          <div className="flex items-center mb-4">
+            <label>Hình ảnh:</label>
+            <input
+              type="file"
+              name="image"
+              className="text-black rounded-sm mt-1  border ml-5"
+              onChange={(e) => setImage(e.target.files?.[0] || null)} // Xử lý upload file
+            />
+          </div>
           <button type="submit">Thêm mới</button>
         </form>
         {message && <p>{message}</p>}
       </div>
-      {/* <h2>Danh sách các users</h2>
-      <Link href="/products_shoes">Thêm mới user</Link>
-      <ul>
-        {users.map((user: IUser) => (
-          <li key={user.id}>
-            {user.id} - {user.name} - {user.email}
-          </li>
-        ))}
-      </ul> */}
+
       <div className="overflow-x-auto">
         <table className="table">
           <thead>
@@ -236,6 +273,9 @@ const Dashboard = () => {
               <th>Id</th>
               <th>Name</th>
               <th>Email</th>
+              <th>Address</th>
+              <th>Phone</th>
+              <th>Image</th> {/* Thêm cột để hiển thị hình ảnh */}
             </tr>
           </thead>
           <tbody>
@@ -244,6 +284,23 @@ const Dashboard = () => {
                 <td>{user.id}</td>
                 <td>{user.name}</td>
                 <td>{user.email}</td>
+                <td>{user.address}</td>
+                <td>{user.phone}</td>
+                <td>
+                  {user.image ? (
+                    <img
+                      src={user.image}
+                      alt="User"
+                      style={{
+                        width: "50px",
+                        height: "50px",
+                        objectFit: "cover",
+                      }}
+                    />
+                  ) : (
+                    "No image"
+                  )}
+                </td>
               </tr>
             ))}
           </tbody>
