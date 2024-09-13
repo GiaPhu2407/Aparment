@@ -206,14 +206,16 @@ const Dashboard = () => {
   return (
     <div>
       <div>
-        <h1>Thêm người dùng mới</h1>
+        <h1 className="text-center text-2xl uppercase font-serif font-bold mt-2">
+          Quản Lý Nhân Viên
+        </h1>
         <form onSubmit={handleSubmit}>
           <div className="flex items-center mb-4">
             <label>Email:</label>
             <input
               type="email"
               name="email"
-              className="text-black rounded-sm mt-1  border ml-2 "
+              className="text-black rounded-sm mt-1  border ml-9 "
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -224,7 +226,7 @@ const Dashboard = () => {
             <input
               type="text"
               name="name"
-              className="text-black rounded-sm mt-1  border ml-5"
+              className="text-black rounded-sm mt-1  border ml-12"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -246,7 +248,7 @@ const Dashboard = () => {
             <input
               type="text"
               name="phone"
-              className="text-black rounded-sm mt-1  border ml-5"
+              className="text-black rounded-sm mt-1  border ml-11"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               required
@@ -261,7 +263,9 @@ const Dashboard = () => {
               onChange={(e) => setImage(e.target.files?.[0] || null)} // Xử lý upload file
             />
           </div>
-          <button type="submit">Thêm mới</button>
+          <button type="submit" className="bg-blue-600 px-4 py-2 rounded-lg">
+            Thêm mới
+          </button>
         </form>
         {message && <p>{message}</p>}
       </div>
@@ -300,6 +304,16 @@ const Dashboard = () => {
                   ) : (
                     "No image"
                   )}
+                </td>
+                <td>
+                  <button className="bg-orange-300 px-4 py-2 rounded-lg">
+                    Sửa
+                  </button>
+                </td>
+                <td>
+                  <button className="bg-red-500 px-4 py-2 rounded-lg">
+                    Xoá
+                  </button>
                 </td>
               </tr>
             ))}
