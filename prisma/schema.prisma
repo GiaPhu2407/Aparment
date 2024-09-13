@@ -34,6 +34,8 @@ model User {
   id      Int      @id @default(autoincrement())
   email   String   @unique
   name    String?
+  phone     String?  // Thêm trường số điện thoại (có thể null)
+  address   String?  // Thêm trường địa chỉ (có thể null)
   posts   Post[]
   profile Profile?
 }

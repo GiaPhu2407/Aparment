@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Sidebar, SidebarBody, SidebarLink } from "@/components/ui/sidebar";
 import {
   IconArrowLeft,
@@ -36,7 +36,7 @@ export function PersonelManager() {
     },
     {
       label: "Quản lý dịch vụ",
-      href: "/ShowServiceManager",
+      href: "#",
       icon: (
         <MdCleaningServices className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
@@ -50,7 +50,7 @@ export function PersonelManager() {
     },
     {
       label: "Quản lý phòng",
-      href: "/ShowRoomManger",
+      href: "/ShowRoomManager",
       icon: (
         <MdOutlineBedroomParent className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
@@ -70,12 +70,14 @@ export function PersonelManager() {
       ),
     },
   ];
+
   const [open, setOpen] = useState(false);
+
   return (
     <div
       className={cn(
         "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-full flex-1 max-w-full mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden",
-        "h-full" // for your use case, use `h-screen` instead of `h-[60vh]`
+        "h-[1000px]"
       )}
     >
       <Sidebar open={open} setOpen={setOpen}>
@@ -94,7 +96,7 @@ export function PersonelManager() {
                 label: "Gia Phu",
                 href: "#",
                 icon: (
-                  <Image
+                  <img
                     src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/428603879_3699291333727981_8450238390845543097_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF8eAl4DqSiHc45WD_3ZUa0Yj2_k1pIrCxiPb-TWkisLKdt4xrCZnSawKeji-j5xGqR90NFt9JrVnVNHzicN-9h&_nc_ohc=bOEh471GIxUQ7kNvgHsX5jW&_nc_ht=scontent.fdad2-1.fna&oh=00_AYDcWgJsXxzR4n9Z_AzzVIwJKxH7nhOj5EkpjS99C-PUzg&oe=66DB9B05"
                     className="h-7 w-7 flex-shrink-0 rounded-full"
                     width={50}
@@ -111,6 +113,7 @@ export function PersonelManager() {
     </div>
   );
 }
+
 export const Logo = () => {
   return (
     <Link
@@ -128,6 +131,7 @@ export const Logo = () => {
     </Link>
   );
 };
+
 export const LogoIcon = () => {
   return (
     <Link
@@ -139,29 +143,114 @@ export const LogoIcon = () => {
   );
 };
 
-// Dummy dashboard component with content
+interface IUser {
+  id: number;
+  name: string;
+  email: string;
+}
+
 const Dashboard = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [users, setUsers] = useState<IUser[]>([]);
+
+  const getData = async () => {
+    const res = await fetch("http://localhost:3000/api/users");
+    if (!res.ok) {
+      throw new Error("Failed to fetch data");
+    }
+    return res.json();
+  };
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const data = await getData();
+        setUsers(data.user);
+      } catch (error) {
+        console.error("Error fetching users:", error);
+      }
+    };
+
+    fetchUsers();
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const response = await fetch("/api/users", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, name }),
+    });
+
+    const result = await response.json();
+    setMessage(result.message || result.error || "Có lỗi xảy ra");
+  };
+
   return (
-    <div className="flex flex-1">
-      <div className="p-2 md:p-10 rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col gap-2 flex-1 w-full h-full">
-        <div className="flex gap-2">
-          {[...new Array(4)].map((i) => (
-            <div
-              key={"first-array" + i}
-              className="h-20 w-full rounded-lg  bg-gray-100 dark:bg-neutral-800 animate-pulse"
-            ></div>
-          ))}
-        </div>
-        <div className="flex gap-2 flex-1">
-          {[...new Array(2)].map((i) => (
-            <div
-              key={"second-array" + i}
-              className="h-full w-full rounded-lg  bg-gray-100 dark:bg-neutral-800 animate-pulse"
-            ></div>
-          ))}
-        </div>
+    <div>
+      <div>
+        <h1>Thêm người dùng mới</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="flex items-center mb-4">
+            <label>Email:</label>
+            <input
+              type="email"
+              name="email"
+              className="text-black rounded-sm mt-1  border ml-2 "
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div className="flex items-center mb-4">
+            <label>Tên:</label>
+            <input
+              type="text"
+              name="name"
+              className="text-black rounded-sm mt-1  border ml-5"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
+          <button type="submit">Thêm mới</button>
+        </form>
+        {message && <p>{message}</p>}
+      </div>
+      {/* <h2>Danh sách các users</h2>
+      <Link href="/products_shoes">Thêm mới user</Link>
+      <ul>
+        {users.map((user: IUser) => (
+          <li key={user.id}>
+            {user.id} - {user.name} - {user.email}
+          </li>
+        ))}
+      </ul> */}
+      <div className="overflow-x-auto">
+        <table className="table">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            {users.map((user: IUser) => (
+              <tr key={user.id}>
+                <td>{user.id}</td>
+                <td>{user.name}</td>
+                <td>{user.email}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
 };
+
 export default PersonelManager;

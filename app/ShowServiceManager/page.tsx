@@ -1,5 +1,5 @@
 import React from "react";
-import ClientManager from "../component/ServiceManager";
+import ServiceManager from "../component/ServiceManager";
 
 const page = () => {
   return (
