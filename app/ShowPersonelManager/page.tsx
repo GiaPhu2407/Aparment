@@ -18,7 +18,7 @@ import { MdOutlineBedroomParent } from "react-icons/md";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaChartLine } from "react-icons/fa";
 
-const PersonelManager = () => {
+const page = () => {
   const links = [
     {
       label: "Dashboard",
@@ -306,4 +306,4 @@ const Dashboard = () => {
   );
 };
 
-export default PersonelManager;
+export default page;

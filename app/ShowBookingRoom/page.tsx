@@ -18,7 +18,7 @@ import { MdOutlineBedroomParent } from "react-icons/md";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaChartLine } from "react-icons/fa";
 
-const BookingRoom = () => {
+const page = () => {
   const links = [
     {
       label: "Dashboard",
@@ -164,4 +164,4 @@ const Dashboard = () => {
     </div>
   );
 };
-export default BookingRoom;
+export default page;
