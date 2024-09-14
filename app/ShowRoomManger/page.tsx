@@ -19,7 +19,7 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 import { FaChartLine } from "react-icons/fa";
 import Home from "@/components/Them";
 
-export function RoomManager() {
+const RoomManager = () => {
   const links = [
     {
       label: "Dashboard",
@@ -111,7 +111,7 @@ export function RoomManager() {
       <Dashboard />
     </div>
   );
-}
+};
 export const Logo = () => {
   return (
     <Link
