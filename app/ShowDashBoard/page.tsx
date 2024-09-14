@@ -37,7 +37,7 @@ import PolarChartDemo from "@/components/Polararea";
 import MixedChartDemo from "@/components/mixedchart";
 import RadarChartDemo from "@/components/radarchart";
 import { GoPeople } from "react-icons/go";
-export function page() {
+export function SidebarDemo() {
   const links = [
     {
       label: "Dashboard",
@@ -485,4 +485,4 @@ const Dashboard = () => {
     </div>
   );
 };
-export default page;
+export default SidebarDemo();
