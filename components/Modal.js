@@ -11,16 +11,8 @@ const Modal = ({ isOpen, onClose, onAdd }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="bg-white rounded-lg shadow-lg p-6 w-11/12 max-w-2xlxl">
+      <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-7xl">
         <div className="flex flex-col space-y-4">
-          <div className="flex items-center">
-            <h3 className="w-1/4">Id</h3>
-            <input
-              type="text"
-              placeholder="Type here"
-              className="input input-bordered input-sm w-full max-w-xs"
-            />
-          </div>
           <div className="flex items-center">
             <h3 className="w-1/4">Ảnh</h3>
             <input

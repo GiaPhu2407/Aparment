@@ -36,7 +36,7 @@ model User {
   name    String?
   phone     String?  // Thêm trường số điện thoại (có thể null)
   address   String?  // Thêm trường địa chỉ (có thể null)
-  image     String?
+  
   posts   Post[]
   profile Profile?
 }

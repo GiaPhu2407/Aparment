@@ -36,7 +36,6 @@ export async function POST(request: NextRequest) {
     name: body.name,
     address: body.address,
     phone: body.phone,
-    image: body.image,
   });
   //b1. Nếu dữ liệu không hợp lệ thì báo lỗi(trả về lỗi)
   if (!userValidateCheck.success) {
@@ -57,7 +56,6 @@ export async function POST(request: NextRequest) {
           name: body.name,
           address: body.address,
           phone: body.phone,
-          image: body.image,
         },
       });
       //d Trả về kết quả là dữ liệu vừa được tạo cùng với status:201
