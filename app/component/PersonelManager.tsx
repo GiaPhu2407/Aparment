@@ -77,7 +77,7 @@ export function PersonelManager() {
     <div
       className={cn(
         "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-full flex-1 max-w-full mx-auto border border-neutral-200 dark:border-neutral-700 overflow-hidden",
-        "h-[1000px]"
+        "h-full"
       )}
     >
       <Sidebar open={open} setOpen={setOpen} animate={false}>
@@ -149,7 +149,6 @@ interface IUser {
   email: string;
   address: string;
   phone: string;
-  image: string; // Thêm thuộc tính hình ảnh
 }
 
 const Dashboard = () => {
@@ -157,7 +156,6 @@ const Dashboard = () => {
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
-  const [image, setImage] = useState<File | null>(null); // Thêm state để lưu hình ảnh
   const [message, setMessage] = useState("");
   const [users, setUsers] = useState<IUser[]>([]);
 
@@ -190,9 +188,6 @@ const Dashboard = () => {
     formData.append("name", name);
     formData.append("address", address);
     formData.append("phone", phone);
-    if (image) {
-      formData.append("image", image); // Thêm hình ảnh vào formData
-    }
 
     const response = await fetch("/api/users", {
       method: "POST",
@@ -254,15 +249,7 @@ const Dashboard = () => {
               required
             />
           </div>
-          <div className="flex items-center mb-4">
-            <label>Hình ảnh:</label>
-            <input
-              type="file"
-              name="image"
-              className="text-black rounded-sm mt-1  border ml-5"
-              onChange={(e) => setImage(e.target.files?.[0] || null)} // Xử lý upload file
-            />
-          </div>
+
           <button type="submit" className="bg-blue-600 px-4 py-2 rounded-lg">
             Thêm mới
           </button>
@@ -279,7 +266,6 @@ const Dashboard = () => {
               <th>Email</th>
               <th>Address</th>
               <th>Phone</th>
-              <th>Image</th> {/* Thêm cột để hiển thị hình ảnh */}
             </tr>
           </thead>
           <tbody>
@@ -290,21 +276,7 @@ const Dashboard = () => {
                 <td>{user.email}</td>
                 <td>{user.address}</td>
                 <td>{user.phone}</td>
-                <td>
-                  {user.image ? (
-                    <img
-                      src={user.image}
-                      alt="User"
-                      style={{
-                        width: "50px",
-                        height: "50px",
-                        objectFit: "cover",
-                      }}
-                    />
-                  ) : (
-                    "No image"
-                  )}
-                </td>
+
                 <td>
                   <button className="bg-orange-300 px-4 py-2 rounded-lg">
                     Sửa
