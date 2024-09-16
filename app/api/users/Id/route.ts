@@ -46,18 +46,17 @@ export async function DELETE(
 ) {
   const userId = Number(params.Id);
   try {
-    const deleteUser = await prisma.user.delete({
+    const deleteuser = await prisma.user.delete({
       where: { id: userId },
     });
-    return NextResponse.json({ deleteUser }, { status: 200 });
+    return NextResponse.json({ deleteuser }, { status: 200 });
   } catch (error: any) {
-    return NextResponse.json(
-      { error_code: USER_NOT_EXIST.error_code, cause: USER_NOT_EXIST.message },
-      { status: 400 }
-    );
+    return NextResponse.json({
+      error_code: USER_NOT_EXIST.error_code,
+      cause: USER_NOT_EXIST.message,
+    });
   }
 }
-
 // export async function PUT(
 //   request: NextRequest,
 //   { params }: { params: { Id: string } }
@@ -103,7 +102,7 @@ export async function PUT(
     // gender: body.gender,
     address: body.address,
     phone: body.phone,
-    
+
     // role: body.role,
   });
   if (!Check.success) {
